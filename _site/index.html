@@ -23,26 +23,43 @@
       <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-352611-12', 'markcrossfield.co.uk');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-352611-12', 'markcrossfield.co.uk');
-  ga('send', 'pageview');
-
-</script>
     <div class="site">
       <div class="sidebar" id="sidebar">
         <div class="header">
           <a href="/"><img id="logo" src="/images/logo.png"></a>
           <span class="tagline">Developer, engineer, trouble maker</span>
         </div>
+        <div class="footer">
+          <span id="footer-links">
+            <a href="/about/" class="footer-link">About Mark</a> <span class="separator">&bull;</span>
+            <a href="https://twitter.com/mrmanc" class="footer-link">@mrmanc</a> <span class="separator">&bull;</span>
+            <a href="https://github.com/mrmanc" class="footer-link">GitHub</a>
+          </span>
+          <p>Hosted on <a href="http://pages.github.com/">Github Pages</a> using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://the-development.github.io/flex/">Flex</a>
+        </div>
         <div class="posts">
           <ul class="posts-list">
+            
+              <li class="post-link">
+                <a class="post-title" href="/posts/2014/03/16/free-hosting-with-github-pages.html">
+                  <span class="post-date">16 Mar 2014</span>
+                  Free hosting with Github Pages
+                </a>
+              </li>
             
               <li class="post-link">
                 <a class="post-title" href="/continuous%20delivery/development/visualisation/2014/02/16/thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html">
@@ -109,14 +126,6 @@
             
           </ul>
         </div>
-        <div class="footer">
-          <span id="footer-links">
-            <a href="/about/" class="footer-link">About</a> <span class="separator">&bull;</span>
-            <a href="https://twitter.com/mrmanc" class="footer-link">@mrmanc</a> <span class="separator">&bull;</span>
-            <a href="https://github.com/mrmanc" class="footer-link">GitHub</a>
-          </span>
-          <p>Hosted on <a href="http://pages.github.com/">Github Pages</a> using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://the-development.github.io/flex/">Flex</a>
-        </div>
       </div>
 
         
@@ -128,27 +137,36 @@
   <div id="post-info">
     
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/graph.png">
+      <img id="cover-photo" src="/images/GitHub_Logo.png">
     </div>
     
     <div id="info-container">
-      <h1 id="title">That's no moon: Visualising Go Delivery Pipelines Using D3.js</h1>
-      <span id="date">16 Feb 2014</a>
+      <h1 id="title">Free hosting with Github Pages</h1>
+      <span id="date">16 Mar 2014</a>
     </div>
   </div>
 
   <div class="post">
-    <p><a target="_blank" href="http://mrmanc.github.io/go-dependency-force-layout/pipeline-dependencies.html?u=http://mrmanc.github.io/go-dependency-force-layout/examples/27012014.json"><img alt="Graph diagram of our Go delivery pipelines" src="/images/autotrader-pipelines.png" width="367" height="363" class="inline-image-right"/></a></p>
-<p>We've been doing quite a bit of work improving our Go environment recently, and correcting one or two continuous integration anti patterns we'd introduced. I wanted to find a way to see the effect of these changes, and it occurred to me that it might be possible to use D3.js to build the view. I have had good use cases for graph diagrams in the past but got bored looking for a good way to draw them programatically. I'd even lazily fallen back on the <a href="http://console.neo4j.org/">Neo4J console</a> to program the graph and then visualise it (and amusingly I now see that that page is using D3.js behind the scenes).</p>
-<p>Anyway, after a quick prototype using Awk to parse the XML configuration file, my interest was tweaked enough to drop that bad habit and embed the parsing in an HTML document using JavaScript. With a bit of tweaking <a href="http://bl.ocks.org/mbostock">Mike's D3.js examples</a> allowed me to build what I wanted.</p>
-<p>It works by fetching the configuration XML over HTTP, either from the Configuration API (provided you are a logged in Go Admin) or from a URL supplied as a parameter. It then extracts the declared dependencies into JSON and passes this to D3.js to be displayed as SVG. If you want to fetch directly from Go, then you should issue the <span style="color:#999999;"><em>Access-Control-Allow-Credentials: true</em></span> header from your Go instance to ensure your browser is allowed to send your cookie credentials to Go.</p>
-<p>I also found it interesting to look at previous historical versions of the configuration, which you can get at using the Go configuration API provided you know the MD5 hash. If you don't, you can use git to query the configuration git repository on the server itself. You can only go back as far as your upgrade to v2.2 though as that is when version control was brought in.</p>
-<p>If you're interested in building one for your own Go instance, take a look at the <a href="http://mrmanc.github.io/go-dependency-force-layout/">project website</a>. You can also look at an anonymised example built from our pipeline definitions.</p>
+    <h2>Complete control, free, and simple to set up</h2>
+
+<p>I’ve made the move from Wordpress to <a href="http://jekyllrb.com/">Jekyll</a>, and Wordpress.com for hosting, to <a href="http://pages.github.com/">Github Pages</a> which has Jekyll support built in.</p>
+
+<p>In short, Jekyll gives you a framework to write your posts in <a href="http://daringfireball.net/projects/markdown/">MarkDown</a>, and easily compile them to HTML by running a simple command.</p>
+
+<p>Combined with Github Pages (which is an awesome way to host HTML sites for free), this is a very powerful way to get an easy to manage blog with complete control and no sales pitch for extras.</p>
+
+<p>You just have to write your post in a MarkDown file, run a Jekyll command and then commit / sync your change to the GitHub repository. You even get optimisation of JS, CSS and images thrown in for free.</p>
+
+<p>I followed <a href="http://hadihariri.com/2013/12/24/migrating-from-wordpress-to-jekyll/">this simple Wordpress migration guide</a> to move my posts, and hacked an <a href="http://the-development.github.io/flex/">existing Jekyll theme</a> to fit my purposes.</p>
+
+<p>Using your own domain is as simple as creating a file with it in in the repository, and changing the DNS to point at Github.</p>
+
+<p>Get started by reading <a href="http://pages.github.com/">this simple Github guide</a>.</p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 16 Feb 2014</span> <span class="separator">&bull;</span>
+      <span id="pub-date">Published on 16 Mar 2014</span> <span class="separator">&bull;</span>
       <span id="social">Find me on <a href="https://twitter.com/mrmanc">Twitter</a>!</span>
     </p>
   </div>
