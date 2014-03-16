@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Home&mdash;Mark Crossfield</title>
+      <title>Fast Feedback&mdash;Mark Crossfield</title>
       <meta name="viewport" content="width=device-width">
 
       <!-- syntax highlighting CSS -->
@@ -119,36 +119,46 @@
         </div>
       </div>
 
-        
-
-<div class="content" id="home">
+        <div class="content" id="home">
   <div id="sidebar-button">
     <img src="/images/sidebar-button.png">
   </div>
   <div id="post-info">
     
-    <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/graph.png">
-    </div>
-    
     <div id="info-container">
-      <h1 id="title">That's no moon: Visualising Go Delivery Pipelines Using D3.js</h1>
-      <span id="date">16 Feb 2014</a>
+      <h1 id="title">Fast Feedback</h1>
+      <span id="date">15 Feb 2012</a>
     </div>
   </div>
 
   <div class="post">
-    <p><a target="_blank" href="http://mrmanc.github.io/go-dependency-force-layout/pipeline-dependencies.html?u=http://mrmanc.github.io/go-dependency-force-layout/examples/27012014.json"><img alt="Graph diagram of our Go delivery pipelines" src="/images/autotrader-pipelines.png" width="367" height="363" class="inline-image-right"/></a></p>
-<p>We've been doing quite a bit of work improving our Go environment recently, and correcting one or two continuous integration anti patterns we'd introduced. I wanted to find a way to see the effect of these changes, and it occurred to me that it might be possible to use D3.js to build the view. I have had good use cases for graph diagrams in the past but got bored looking for a good way to draw them programatically. I'd even lazily fallen back on the <a href="http://console.neo4j.org/">Neo4J console</a> to program the graph and then visualise it (and amusingly I now see that that page is using D3.js behind the scenes).</p>
-<p>Anyway, after a quick prototype using Awk to parse the XML configuration file, my interest was tweaked enough to drop that bad habit and embed the parsing in an HTML document using JavaScript. With a bit of tweaking <a href="http://bl.ocks.org/mbostock">Mike's D3.js examples</a> allowed me to build what I wanted.</p>
-<p>It works by fetching the configuration XML over HTTP, either from the Configuration API (provided you are a logged in Go Admin) or from a URL supplied as a parameter. It then extracts the declared dependencies into JSON and passes this to D3.js to be displayed as SVG. If you want to fetch directly from Go, then you should issue the <span style="color:#999999;"><em>Access-Control-Allow-Credentials: true</em></span> header from your Go instance to ensure your browser is allowed to send your cookie credentials to Go.</p>
-<p>I also found it interesting to look at previous historical versions of the configuration, which you can get at using the Go configuration API provided you know the MD5 hash. If you don't, you can use git to query the configuration git repository on the server itself. You can only go back as far as your upgrade to v2.2 though as that is when version control was brought in.</p>
-<p>If you're interested in building one for your own Go instance, take a look at the <a href="http://mrmanc.github.io/go-dependency-force-layout/">project website</a>. You can also look at an anonymised example built from our pipeline definitions.</p>
+    <p>My relationship with Ant has had its ups and downs. I hate writing a build file in a language that I'm unfamiliar with, and finding that the language seems designed to encourage and hideous result.</p>
+<p>Recently however I felt I achieved something, successfully reducing the duration of our teams pre check in task task from three and a half minutes to only 24 seconds.</p>
+<p>I think this is important that number of reasons. The first is that we are aiming to check in more often. The closer to your last check in you are, the easier and cheaper it is to use revert to recover from wrong turns. If the target takes too long, it becomes a barrier to checking in and tempts you to do just a little more. </p>
+<p>Secondly, as many developers will attest, the longer you spend staring at Ant output the more context leaks out of your brain, until you find yourself just staring blankly into space. It doesn't help with the natural cadence of development.</p>
+<p>Finally, time is money! Three minutes ten times a day across a large team can amount to hundreds of pounds worth of wasted time.</p>
+<p>So what does our target do? Well, in it's fifth incarnation it runs a cut down set of unit tests, and checks we haven't introduced any measurable code quality issues using PMD and Checkstyle. In the past it has done anything we could think of:</p>
+<ul>
+<li>run our unit tests</li>
+<li>run our integration tests</li>
+<li>run our http container tests with the app running in Jetty</li>
+<li>run our selenium browser tests</li>
+<li>run our jstestdriver JavaScript tests</li>
+<li>instrumented our classes using Cobertura and guarded against drops in test coverage</li>
+<li>PMD and Checkstyle checks as mentioned above</li>
+</ul>
+<p>It has evolved over time depending on how frustrated we were with it's length, and what we were working on at the time (hence what the risks were). At our lowest, we were spending around fifteen minutes running tests before checking in.</p>
+<p>It was suggested to us that we should be able to hold our breath whilst our tests run, and I'm glad to say that even the smokers of the team should be able to do that for 24 seconds.</p>
+<p>Whilst pragmatically sacrificing coverage has got us so far, the recent drop required something a bit more sophisticated. Two techniques have helped: running tests in parallel and only quality scanning modified files out of sync with Subversion.</p>
+<p>The first part is achievable due to the experimental <a href="http://kentbeck.github.com/junit/javadoc/latest/org/junit/experimental/ParallelComputer.html">ParallelComputer</a> class introduced into JUnit. You can write a test suite which uses the class to run several tests in parallel programmatically. There are draw backs - the cost of the parallelisation may in fact increase the time your tests take. It took ours from 50 seconds to 12. Also, when the suite is invoked from Ant we've been unable to get it to generate the usual JUnit XML results - only the one test (our suite) gets reported. Still, hopefully the class will mature into either a test runner or option in the JUnit Ant task.</p>
+<p>The second was a lucky guess that paid off - the SVNAnt library happens to provide a number of built in file selectors - my favourite being <a href="http://subclipse.tigris.org/svnant/selectors.html#svnmodified">svnmodified</a>. This allows you to create filesets containing only those files you have edited since your last check in. I've used this to restrict our PMD and Checkstyle operations and the effect was awesome. PMD was the biggest culprit spending ages longer than the tests themselves. PMD now runs in just six seconds!</p>
+<p>Is it finished? No, of course not - it can always get faster, and unchecked will always gradually get slower. As we work on different aspects of the applicant we will find it more important to run different types of tests. And as we mature the types of tests we depend on will change. We could probably be smarter about what we clean and compile, perhaps even which tests we run. </p>
+<p>So next time you find yourself staring at a screen full of any gibberish, think about reducing the amount of work your build does by being creative.</p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 16 Feb 2014</span> <span class="separator">&bull;</span>
+      <span id="pub-date">Published on 15 Feb 2012</span> <span class="separator">&bull;</span>
       <span id="social">Find me on <a href="https://twitter.com/mrmanc">Twitter</a>!</span>
     </p>
   </div>

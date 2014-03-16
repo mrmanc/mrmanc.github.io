@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Home&mdash;Mark Crossfield</title>
+      <title>Hello!&mdash;Mark Crossfield</title>
       <meta name="viewport" content="width=device-width">
 
       <!-- syntax highlighting CSS -->
@@ -119,36 +119,25 @@
         </div>
       </div>
 
-        
-
-<div class="content" id="home">
+        <div class="content" id="home">
   <div id="sidebar-button">
     <img src="/images/sidebar-button.png">
   </div>
   <div id="post-info">
     
-    <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/graph.png">
-    </div>
-    
     <div id="info-container">
-      <h1 id="title">That's no moon: Visualising Go Delivery Pipelines Using D3.js</h1>
-      <span id="date">16 Feb 2014</a>
+      <h1 id="title">Hello!</h1>
+      <span id="date">05 Jun 2011</a>
     </div>
   </div>
 
   <div class="post">
-    <p><a target="_blank" href="http://mrmanc.github.io/go-dependency-force-layout/pipeline-dependencies.html?u=http://mrmanc.github.io/go-dependency-force-layout/examples/27012014.json"><img alt="Graph diagram of our Go delivery pipelines" src="/images/autotrader-pipelines.png" width="367" height="363" class="inline-image-right"/></a></p>
-<p>We've been doing quite a bit of work improving our Go environment recently, and correcting one or two continuous integration anti patterns we'd introduced. I wanted to find a way to see the effect of these changes, and it occurred to me that it might be possible to use D3.js to build the view. I have had good use cases for graph diagrams in the past but got bored looking for a good way to draw them programatically. I'd even lazily fallen back on the <a href="http://console.neo4j.org/">Neo4J console</a> to program the graph and then visualise it (and amusingly I now see that that page is using D3.js behind the scenes).</p>
-<p>Anyway, after a quick prototype using Awk to parse the XML configuration file, my interest was tweaked enough to drop that bad habit and embed the parsing in an HTML document using JavaScript. With a bit of tweaking <a href="http://bl.ocks.org/mbostock">Mike's D3.js examples</a> allowed me to build what I wanted.</p>
-<p>It works by fetching the configuration XML over HTTP, either from the Configuration API (provided you are a logged in Go Admin) or from a URL supplied as a parameter. It then extracts the declared dependencies into JSON and passes this to D3.js to be displayed as SVG. If you want to fetch directly from Go, then you should issue the <span style="color:#999999;"><em>Access-Control-Allow-Credentials: true</em></span> header from your Go instance to ensure your browser is allowed to send your cookie credentials to Go.</p>
-<p>I also found it interesting to look at previous historical versions of the configuration, which you can get at using the Go configuration API provided you know the MD5 hash. If you don't, you can use git to query the configuration git repository on the server itself. You can only go back as far as your upgrade to v2.2 though as that is when version control was brought in.</p>
-<p>If you're interested in building one for your own Go instance, take a look at the <a href="http://mrmanc.github.io/go-dependency-force-layout/">project website</a>. You can also look at an anonymised example built from our pipeline definitions.</p>
+    <p>The obligatory first post. I've got a few ideas in the pipeline for future posts, but with a busy June it may be some time before they materialise. I'm attending Velocity 2011 in San Francisco, then heading straight off to Glastonbury where I volunteer as a steward with Oxfam. With plenty of travel time I'm sure I'll manage to post something soon.</p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 16 Feb 2014</span> <span class="separator">&bull;</span>
+      <span id="pub-date">Published on 05 Jun 2011</span> <span class="separator">&bull;</span>
       <span id="social">Find me on <a href="https://twitter.com/mrmanc">Twitter</a>!</span>
     </p>
   </div>
