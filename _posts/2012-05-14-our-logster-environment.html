@@ -1,0 +1,40 @@
+---
+layout: post
+title: Our Logster Environment
+categories: []
+tags: []
+status: draft
+type: post
+published: false
+meta: {}
+author: 
+---
+<p>I realised whilst writing another blog post that our Logster / Graphite set up is not part of the distribution, and might be useful to others. Specifically, I mean the details of how we use cron to invoke scripts, what those scripts have in them and how this relates to Graphite.</p>
+<p>I'm going to assume at this point that you know what I'm talking about when I mention Logster and Graphite, and that you understand that you invoke Logster to parse log files which feeds data into Graphite.</p>
+<p>We have our production logs mounted read only on the server running Graphite, in a directory structure a bit like this:</p>
+<pre>
+/logs
+  /datacentre1
+    /server1
+    /server2
+    /server3
+  /datacentre2
+    /server1
+    /server2
+    /server3
+</pre>
+<p>This server has cron jobs which invoke shell scripts which we refer to as monitor scripts. The monitor scripts wire up the log files to specific parsers. Inside a monitor script you find something like this:</p>
+<pre>
+#!/bin/bash
+
+logfiles=`ls /logs/datacentre*/server*/apache2_logs/access.log`
+
+for logfile in $logfiles; do
+  server=`echo $logfile | cut -d "/" -f 4`
+  datacentre=`echo $logfile | cut -d "/" -f 3`
+  /usr/local/graphite/sources/logster/logster -o graphite --graphite-host=localhost:2003 -p myapp.${datacentre}.${server} ApacheLogster $logfile
+done
+</pre>
+<p>These might not be pretty, but they work. Crucially, they push data into Graphite name spaced by the server instance that the data relates to. You might find that each log file is parsed by several parsers - that is fine so long as the parsers metric definitions do not collide.</p>
+<p>We've started using a continuous build pipeline to push changes onto the Graphite server, and with a decent set of parsers we anticipate that the only real changes that engineers will need to push are the crontab definitions (checked in with the sources), and the monitor scripts.</p>
+<p>If you do something radically different then leave a comment - we'd be interested to hear!</p>
