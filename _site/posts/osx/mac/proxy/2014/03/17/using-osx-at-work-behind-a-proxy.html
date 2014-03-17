@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Automating Vuze with Dropbox (in OS X)&mdash;Mark Crossfield</title>
+      <title>Using OSX at work behind a proxy&mdash;Mark Crossfield</title>
       <meta name="viewport" content="width=device-width">
 
       <!-- syntax highlighting CSS -->
@@ -143,37 +143,22 @@
   <div id="post-info">
     
     <div id="info-container">
-      <h1 id="title">Automating Vuze with Dropbox (in OS X)</h1>
-      <span id="date">30 July 2011</a>
+      <h1 id="title">Using OSX at work behind a proxy</h1>
+      <span id="date">17 March 2014</a>
     </div>
   </div>
 
   <div class="post">
-    <p>This is a simple one, but I&#39;m quite pleased with it, and I don&#39;t think it jumps out as an obvious tweak. Fuze (formally Azureus) is a great BitTorrent client, which has some great features like transcoding and subscriptions. I&#39;ve previously had it configured to download everything from an RSS feed, which was built from my bookmarks in Mininova. But they don&#39;t have so many torrents these days, and I wanted a set up which wasn&#39;t dependent on one site.</p>
+    <p>Here are some tools I’ve found useful recently to work effectively using OSX behind a proxy at work.</p>
 
-<p>Anyway. Vuze allows you to configure a watched folder, from which it loads any torrent files added. You can configure this to be any folder, so you just need to pick one in your Dropbox.</p>
+<p><a href="http://tomayko.com/writings/os-x-network-location-support-from-the-command-line">Command Line Proxy Control</a></p>
 
-<p><a href="http://markisadeveloper.files.wordpress.com/2011/07/screen-shot-2011-07-31-at-17-15-45.png"><img src="http://markisadeveloper.files.wordpress.com/2011/07/screen-shot-2011-07-31-at-17-15-45.png" alt="Vuze Torrent Watched Folder"></a></p>
-
-<p>The slightly less obvious thing is that if you have Dropbox installed on your iPhone / iPad, then you can download files within Safari and choose to place them in your Dropbox from that device. So as long as you have Vuze open, you can kick off a download just by downloading the torrent file from your mobile device.</p>
-
-<p>If you&#39;re like me though, you probably close Vuze when it&#39;s not doing anything. So for bonus points, why not set up some AppleScript to open Vuze when a file is added to your folder? I&#39;ve not used AppleScript before, except to hook some stuff up with Automator. But it&#39;s actually really easy to configure a script for your folder, and it only needs to be three lines long to fire up Vuze. I&#39;ve included it below for reference. Save it to &quot;/Library/Scripts/Folder Action Scripts/&quot; (you&#39;ll need to sudo copy it there). Just right click the folder, and choose Folder Actions, and choose your script.</p>
-
-<div class="highlight"><pre><code class="applescript"><span class="k">on</span> <span class="nv">adding</span> <span class="nv">folder</span> <span class="nb">items</span> <span class="k">to</span> <span class="nv">this_folder</span> <span class="nb">after</span> <span class="nv">receiving</span> <span class="nv">added_items</span>
-<span class="k">try</span>
-<span class="k">tell</span> <span class="err">_application_</span> <span class="s2">&quot;Vuze&quot;</span>
-<span class="nb">activate</span>
-<span class="k">end</span> <span class="k">tell</span>
-<span class="k">end</span> <span class="k">try</span>
-<span class="k">end</span> <span class="nv">adding</span> <span class="nv">folder</span> <span class="nb">items</span> <span class="k">to</span>
-</code></pre></div>
-
-<p>Test it out, and hey presto, you&#39;re done!</p>
+<p><a href="http://www.jumbodumbothoughts.com/2014/02/proxy-server-controlplane.html">On Automatically Changing your Network Location and Proxy Servers with Controlplane</a></p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 30 July 2011</span> <span class="separator">&bull;</span> <a href="/life%20hacks/2011/07/30/automating-vuze-with-dropbox-in-os-x.html">Permalink</a>
+      <span id="pub-date">Published on 17 March 2014</span> <span class="separator">&bull;</span> <a href="/posts/osx/mac/proxy/2014/03/17/using-osx-at-work-behind-a-proxy.html">Permalink</a>
     </p>
   </div>
 

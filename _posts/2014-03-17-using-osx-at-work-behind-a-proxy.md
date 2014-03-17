@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Surviving OSX in a corporate environment
+title: Using OSX at work behind a proxy
 categories:
 - posts
 - osx
@@ -10,7 +10,7 @@ status: publish
 published: true
 ---
 
-Here are some tools I’ve found useful recently to survive using OSX in a locked down corporate environment.
+Here are some tools I’ve found useful recently to work effectively using OSX behind a proxy at work.
 
 [Command Line Proxy Control](http://tomayko.com/writings/os-x-network-location-support-from-the-command-line)
 
