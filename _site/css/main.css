@@ -270,6 +270,11 @@ a:hover {
   opacity: 0.7;
 }
 
+.inline-image-right {
+  float: right;
+  margin-left: 1em;
+}
+
 /*****************************************************************************/
 /*
 /* Colophon
