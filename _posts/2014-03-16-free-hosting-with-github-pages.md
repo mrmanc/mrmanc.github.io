@@ -19,6 +19,8 @@ You just have to write your post in a MarkDown file, run a Jekyll command and th
 
 I first followed [this simple Wordpress migration guide](http://hadihariri.com/2013/12/24/migrating-from-wordpress-to-jekyll/) to move my posts, and hacked an [existing Jekyll theme](http://the-development.github.io/flex/) to fit my purposes. That migration mechanism left me with HTML files instead of MarkDown. I then used [exitwp](https://github.com/thomasf/exitwp) which was much more successful, but required a little review. There are lots of other migration guides on the [Jekyll Import site](http://import.jekyllrb.com/docs/home/).
 
+I wish I’d seen [Octopress](http://octopress.org/) before I got started—I’ll move to that when I get a chance.
+
 Using your own domain is as simple as creating a file with it in in the repository, and changing the DNS to point at Github.
 
 Get started by reading [this simple Github guide](http://pages.github.com/).

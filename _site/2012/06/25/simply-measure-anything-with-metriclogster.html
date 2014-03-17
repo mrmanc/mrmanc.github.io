@@ -70,7 +70,7 @@
               <li class="post-link">
                 <a class="post-title" href="/continuous%20delivery/development/visualisation/2014/02/16/thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html">
                   <span class="post-date">16 Feb 2014</span>
-                  That's no moon: Visualising Go Delivery Pipelines Using D3.js
+                  That’s no moon: Visualising Go Delivery Pipelines Using D3.js
                 </a>
               </li>
             
@@ -153,21 +153,21 @@
   </div>
 
   <div class="post">
-    <p>Okay, so my <a href="http://markisadeveloper.wordpress.com/2012/05/10/meet-graphite/">previous post</a> is a long overdue summary of how we are visualising application metrics using Graphite. We are writing custom Logster parsers which scan our log files and push interesting things into Graphite. This means that to get a new metric into Graphite we need to add it to our log files (unless it already exists), and adapt or create a python Logster parser to understand whatever we&#39;ve logged. This parser then needs to be deployed to our server running logster and a graph built. The biggest blocker we&#39;ve seen with this approach is the necessity for the engineer to understand how to write Python, where to find and test the Logster parsers, and how to deploy the parser to the Logster server. Personally, this means either doing the work myself or explaining the peculiarities of Python white space handling to yet another person. There must be a better way.</p>
+    <p>Okay, so my <a href="http://markisadeveloper.wordpress.com/2012/05/10/meet-graphite/">previous post</a> is a long overdue summary of how we are visualising application metrics using Graphite. We are writing custom Logster parsers which scan our log files and push interesting things into Graphite. This means that to get a new metric into Graphite we need to add it to our log files (unless it already exists), and adapt or create a python Logster parser to understand whatever we’ve logged. This parser then needs to be deployed to our server running logster and a graph built. The biggest blocker we’ve seen with this approach is the necessity for the engineer to understand how to write Python, where to find and test the Logster parsers, and how to deploy the parser to the Logster server. Personally, this means either doing the work myself or explaining the peculiarities of Python white space handling to yet another person. There must be a better way.</p>
 
-<p>It has occured to us to use StatsD to simplify this stuff by the way, but we&#39;re not convinced it is designed to scale.</p>
+<p>It has occurred to us to use StatsD to simplify this stuff by the way, but we’re not convinced it is designed to scale.</p>
 
-<p>A couple of months ago I had the idea of creating a generalised parser to make this process easier. A little Googling discovered that, as usual, someone had already had a similar idea. Jeff Blaine had <a href="https://github.com/jblaine/logster/commit/a6a1da5a3a1ad527f3493cfe4b561893932207ec">committed</a> a MetricParser (as detailed in this <a href="http://www.kickflop.net/blog/2012/03/30/any-metric-graphing-with-graphite-and-syslog/">blog post</a>) which was intended to be used with syslog. This dealt with the use case of wanting to log counter type metrics, however we also find ourselves logging a lot of time based metrics which don&#39;t lend themselves to being totalled up as a counter.</p>
+<p>A couple of months ago I had the idea of creating a generalised parser to make this process easier. A little Googling discovered that, as usual, someone had already had a similar idea. Jeff Blaine had <a href="https://github.com/jblaine/logster/commit/a6a1da5a3a1ad527f3493cfe4b561893932207ec">committed</a> a MetricParser (as detailed in this <a href="http://www.kickflop.net/blog/2012/03/30/any-metric-graphing-with-graphite-and-syslog/">blog post</a>) which was intended to be used with syslog. This dealt with the use case of wanting to log counter type metrics, however we also find ourselves logging a lot of time based metrics which don’t lend themselves to being totalled up as a counter.</p>
 
 <p>So in discussion with Jeff I have rewritten the MetricLogster to accept time based metrics, and modified the format slightly.</p>
 
-<p>The upshot of this is that once you&#39;ve got MetricLogster hitting your application&#39;s log files, then creating a new metric in Graphite is as simple as creating a line of log, for example (using Log4J):</p>
+<p>The upshot of this is that once you’ve got MetricLogster hitting your application’s log files, then creating a new metric in Graphite is as simple as creating a line of log, for example (using Log4J):</p>
 <div class="highlight"><pre><code class="text language-text" data-lang="text">logger.info(&quot;METRIC_COUNT name=customer.checkout value=1&quot;);
 </code></pre></div>
 <p>Or, if you are logging a time, you can just do:</p>
 <div class="highlight"><pre><code class="text language-text" data-lang="text">logger.info(&quot;METRIC_TIME name=request_duration value=150ms&quot;);
 </code></pre></div>
-<p>Once you&#39;ve got your application writing those statements, the MetricLogster parser will pick them up and understand what to push to Graphite. In the case of counts, you are only really interested in the total figure - how many customers checked out, how often a service failed etc. When you are logging times however it makes no sense to total them up; you want to know what some aggregate function returns for the set of times. Usually, you&#39;re interested in the mean, median (if you&#39;ve realised that the mean doesn&#39;t tell you much), and possibly something like the interquartile range to tell you how distributed the values were.</p>
+<p>Once you’ve got your application writing those statements, the MetricLogster parser will pick them up and understand what to push to Graphite. In the case of counts, you are only really interested in the total figure - how many customers checked out, how often a service failed etc. When you are logging times however it makes no sense to total them up; you want to know what some aggregate function returns for the set of times. Usually, you’re interested in the mean, median (if you’ve realised that the mean doesn’t tell you much), and possibly something like the interquartile range to tell you how distributed the values were.</p>
 
 <p>So, what do you get for free? For the above, you would get:</p>
 
@@ -180,13 +180,13 @@
 
 <p>This is the purpose behind stating in the log file what sort of metric it is. Configuring what percentiles to record is just a matter of specifying them as parameters in the call to Logster.</p>
 
-<p>But wait: this doesn&#39;t just work for Log4J! If you can adapt your log format, you can use this for anything! All you have to do is conform to the syntax and the parser will do the rest. And Jeff&#39;s idea of hooking this up to your syslog server is very smart - that way rather than having to wire up the parser and your log file each time you build a new app, you can just hook up one syslog server (or even a cluster) and get all the benefit of UDP fire and forget integration with your Graphite server, via a UDP &gt; Syslog &gt; log file &gt; Logster &gt; Graphite route.</p>
+<p>But wait: this doesn’t just work for Log4J! If you can adapt your log format, you can use this for anything! All you have to do is conform to the syntax and the parser will do the rest. And Jeff’s idea of hooking this up to your syslog server is very smart - that way rather than having to wire up the parser and your log file each time you build a new app, you can just hook up one syslog server (or even a cluster) and get all the benefit of UDP fire and forget integration with your Graphite server, via a UDP &gt; Syslog &gt; log file &gt; Logster &gt; Graphite route.</p>
 
-<p>I&#39;m still waiting for my pull request to get processed, So in the meantime:</p>
+<p>I’m still waiting for my pull request to get processed, So in the meantime:</p>
 
 <p><strong><a href="https://github.com/mrmanc/logster/blob/master/parsers/MetricLogster.py">look here for the new MetricLogster</a></strong></p>
 
-<p>(and you&#39;ll need <a href="https://github.com/mrmanc/logster/blob/master/parsers/stats_helper.py">stats_helper</a>)</p>
+<p>(and you’ll need <a href="https://github.com/mrmanc/logster/blob/master/parsers/stats_helper.py">stats_helper</a>)</p>
 
 <p>Set it up, tell people about it and see what happens.</p>
 

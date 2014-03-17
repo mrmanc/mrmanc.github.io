@@ -25,8 +25,8 @@ tags:
 - Visualisation
 ---
 
-**Update: I've rewritten this with more features and better code - [take a look](https://github.com/mrmanc/log-ninja#distribution)!**  
-I spend literally hours a week just trawling logs, often wanting to visualise what I'm seeing. Yes, I could faff with Splunk or something else expensive (yes, I know there is a free version), but sometimes I just want to know what a column of response times looks like.
+**Update: I’ve rewritten this with more features and better code - [take a look](https://github.com/mrmanc/log-ninja#distribution)!**  
+I spend literally hours a week just trawling logs, often wanting to visualise what I’m seeing. Yes, I could faff with Splunk or something else expensive (yes, I know there is a free version), but sometimes I just want to know what a column of response times looks like.
 
 Previously I was quite a fan of using uniq -c for this aggregation, like this:
 
@@ -66,9 +66,9 @@ Which for the UNIX dictionary does this (first two parts just output lines with 
 
 
 
-... which you'll all appreciate is a pivot table of word lengths in the handy list of words provided with most UNIX systems. First column is the word length, second is the frequency.
+... which you’ll all appreciate is a pivot table of word lengths in the handy list of words provided with most UNIX systems. First column is the word length, second is the frequency.
 
-Takes a bit of reading doesn't it?
+Takes a bit of reading doesn’t it?
 
 Better than that would be something graphical. Using my handy distribution script does this:
 
@@ -106,9 +106,9 @@ Better than that would be something graphical. Using my handy distribution scrip
 
 
 
-That's pretty right? You remember the [normal distribution](http://en.wikipedia.org/wiki/Normal_distribution) don't you?
+That’s pretty right? You remember the [normal distribution](http://en.wikipedia.org/wiki/Normal_distribution) don’t you?
 
-It's even nice enough to work out that you only had 24 records, and so curtailed it's default of a chart with a height of 55 rows. If you supply more than 55 records it will work out the value of each bar to distribute your records over 55 lines. If you want to reduce the number of lines, or supply a higher maximum you can pass in a max_lines variable. You can also supply a max value to zoom in on the beginning of the chart.
+It’s even nice enough to work out that you only had 24 records, and so curtailed it’s default of a chart with a height of 55 rows. If you supply more than 55 records it will work out the value of each bar to distribute your records over 55 lines. If you want to reduce the number of lines, or supply a higher maximum you can pass in a max_lines variable. You can also supply a max value to zoom in on the beginning of the chart.
 
 
 
@@ -125,15 +125,15 @@ It's even nice enough to work out that you only had 24 records, and so curtailed
 
 
 
-I haven't implemented a min value because thinking about that makes my head hurt. If you fancy doing it yourself, let me know so I can use it :)
+I haven’t implemented a min value because thinking about that makes my head hurt. If you fancy doing it yourself, let me know so I can use it :)
 
 Issues: Percentiles are wrong (for some interpretations of wrong) when you zoom in or change the max rows.
 
 **Get the script: http://bit.ly/log-ninja**
 
-Oh, and see Zach Holman's [Spark](https://github.com/holman/spark) tool for another smart command line visualisation of numbers.
+Oh, and see Zach Holman’s [Spark](https://github.com/holman/spark) tool for another smart command line visualisation of numbers.
 
-Perhaps (following Zach Holman's example) you want to understand the distribution of earthquake magnitudes in the last week? Simple.
+Perhaps (following Zach Holman’s example) you want to understand the distribution of earthquake magnitudes in the last week? Simple.
 
 
 
@@ -151,6 +151,6 @@ Perhaps (following Zach Holman's example) you want to understand the distributio
 
 
 
-Reassuring eh? Just feel lucky you weren't in one of those 94 +4[MMS](http://en.wikipedia.org/wiki/Moment_magnitude_scale) events!
+Reassuring eh? Just feel lucky you weren’t in one of those 94 +4[MMS](http://en.wikipedia.org/wiki/Moment_magnitude_scale) events!
 
 Awk, I <3 you.

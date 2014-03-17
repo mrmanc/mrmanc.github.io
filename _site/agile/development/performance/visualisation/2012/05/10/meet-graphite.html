@@ -70,7 +70,7 @@
               <li class="post-link">
                 <a class="post-title" href="/continuous%20delivery/development/visualisation/2014/02/16/thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html">
                   <span class="post-date">16 Feb 2014</span>
-                  That's no moon: Visualising Go Delivery Pipelines Using D3.js
+                  That’s no moon: Visualising Go Delivery Pipelines Using D3.js
                 </a>
               </li>
             
@@ -164,7 +164,7 @@
 
 <h4>Screenshots</h4>
 
-<p>So, I&#39;ll show you some pretty pictures. Graphite is a web application which provides a view on to aggregated data. It provides the ability to build custom charts with the metrics you have pushed in using Logster, StatsD or something else. You can further aggregate data series and use <a href="http://graphite.readthedocs.org/en/1.0/functions.html">other functions</a> to transform the data you are interested in. You can view metrics over arbitrary time periods and drill down to as much granularity as you&#39;ve recorded (most likely the individual server level if you used Logster).</p>
+<p>So, I’ll show you some pretty pictures. Graphite is a web application which provides a view on to aggregated data. It provides the ability to build custom charts with the metrics you have pushed in using Logster, StatsD or something else. You can further aggregate data series and use <a href="http://graphite.readthedocs.org/en/1.0/functions.html">other functions</a> to transform the data you are interested in. You can view metrics over arbitrary time periods and drill down to as much granularity as you’ve recorded (most likely the individual server level if you used Logster).</p>
 
 <p><img src="http://graphite.wikidot.com/local--files/screen-shots/graphite_fullscreen_800.png" alt=""></p>
 
@@ -176,7 +176,7 @@
 
 <p>Almost one year on and we have a number of teams in the organisation feeding data into Graphite using logster. We have data coming from browsers, from Apache, from applications through Log4J, from Squid and more. Interest is still growing but we have already seen huge benefits and an improvement to our stability response.</p>
 
-<p><a href="http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png"><img src="http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png" alt=""></a>Dashboards mounted on walls keep us up to date with problems and have become the heartbeat for our applications. When we are deploying we watch for issues closely, and we keep a weather eye on the app all day. Although we&#39;re not quite at the point where we&#39;re controlling our own deployments, our delivery team have taken a lot more responsibility for the application&#39;s stability, which can only be a good thing.</p>
+<p><a href="http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png"><img src="http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png" alt=""></a>Dashboards mounted on walls keep us up to date with problems and have become the heartbeat for our applications. When we are deploying we watch for issues closely, and we keep a weather eye on the app all day. Although we’re not quite at the point where we’re controlling our own deployments, our delivery team have taken a lot more responsibility for the application’s stability, which can only be a good thing.</p>
 
 <p>So what sort of things do we log? In the chart below you can see our traffic pattern over a 48 hour period, with a 24 hour offset level in green for comparison. Although this is a fairly static chart it does sometimes alert us to serious stability issues when our traffic has dropped steadily, and once to a DNS misconfiguration which sent a high volume of traffic for another application to ours.</p>
 
@@ -188,9 +188,9 @@
 
 <p>We also show a chart of the median response times for requests, and a measure of the realistic time it takes users to load pages, as reported by browsers using the <a href="http://yahoo.github.com/boomerang/doc/">Boomerang</a> library. As well as reassurring us of the shape of our overall page performance, it allows us to see when our users are impacted by slowdowns caused by database issues, slow external dependencies etc.</p>
 
-<p>From an obscure black box a year ago to a realistic view of our application&#39;s innards today, we&#39;ve come a long way.</p>
+<p>From an obscure black box a year ago to a realistic view of our application’s innards today, we’ve come a long way.</p>
 
-<h4>What&#39;s next?</h4>
+<h4>What’s next?</h4>
 
 <p><em><strong>Alerting</strong></em>; since this information is valuable to us we intend to improve our response by hooking up something like <a href="https://github.com/wayfair/Graphite-Tattle">Graphite Tattle</a> or <a href="http://www.nagios.org/">Nagios</a> to provide us with alerts when metrics exceed thresholds. Further, using the <a href="http://graphite.readthedocs.org/en/1.0/functions.html#graphite.render.functions.holtWintersAberration">Holt Winters functions</a> recently introduced in Graphite we intend to make these alerts smart, basing their confidence of an event on previous data.</p>
 

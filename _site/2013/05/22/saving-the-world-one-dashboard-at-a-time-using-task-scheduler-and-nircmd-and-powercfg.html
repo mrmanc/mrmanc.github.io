@@ -70,7 +70,7 @@
               <li class="post-link">
                 <a class="post-title" href="/continuous%20delivery/development/visualisation/2014/02/16/thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html">
                   <span class="post-date">16 Feb 2014</span>
-                  That's no moon: Visualising Go Delivery Pipelines Using D3.js
+                  That’s no moon: Visualising Go Delivery Pipelines Using D3.js
                 </a>
               </li>
             
@@ -153,7 +153,7 @@
   </div>
 
   <div class="post">
-    <p>A colleague asked us recently to make sure we turn our monitors off overnight to save power. That’s all very well, but what should we do about our dashboard? We purposefully disable power saving to make sure that the display doesn&#39;t turn off during the day, and since we never actually use it there would be nothing to wake it up! It turns out you can easily script this using Task Scheduler, which comes with Windows. You will need to download a tool called <a href="http://www.nirsoft.net/utils/nircmd.html">NirCmd</a>, which allows you to control your monitor from the command line (amongst many other things). You already have a command called powercfg to configure the other Power Saving options from the command line.</p>
+    <p>A colleague asked us recently to make sure we turn our monitors off overnight to save power. That’s all very well, but what should we do about our dashboard? We purposefully disable power saving to make sure that the display doesn’t turn off during the day, and since we never actually use it there would be nothing to wake it up! It turns out you can easily script this using Task Scheduler, which comes with Windows. You will need to download a tool called <a href="http://www.nirsoft.net/utils/nircmd.html">NirCmd</a>, which allows you to control your monitor from the command line (amongst many other things). You already have a command called powercfg to configure the other Power Saving options from the command line.</p>
 
 <p><a href="http://markisadeveloper.files.wordpress.com/2013/05/dashboard-monitors.jpg"><img src="http://markisadeveloper.files.wordpress.com/2013/05/dashboard-monitors.jpg?w=300" alt="dashboard-monitors"></a></p>
 
@@ -165,7 +165,7 @@ C:\nircmd-x64\nircmd.exe monitor off</code></p>
 <code>powercfg -x monitor-timeout-ac 0
 C:\nircmd-x64\nircmd.exe monitor on</code></p>
 
-<p>Make sure you put the proper path you’ve unzipped NirCmd to. You could do without the monitor timeout being changed, but if the mouse get’s nudged during quiet time, the monitor won&#39;t turn off again.</p>
+<p>Make sure you put the proper path you’ve unzipped NirCmd to. You could do without the monitor timeout being changed, but if the mouse get’s nudged during quiet time, the monitor won’t turn off again.</p>
 
 <p>We specifically turn the monitor on in the morning after disabling the power saving option, as there is no mouse or keyboard activity to prompt it to wake - otherwise the team will just be looking at a blank screen all day.</p>
 

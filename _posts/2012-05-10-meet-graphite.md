@@ -35,7 +35,7 @@ The advice is to make it easy for developers to get metrics into Graphite, and t
 
 #### Screenshots
 
-So, I'll show you some pretty pictures. Graphite is a web application which provides a view on to aggregated data. It provides the ability to build custom charts with the metrics you have pushed in using Logster, StatsD or something else. You can further aggregate data series and use [other functions](http://graphite.readthedocs.org/en/1.0/functions.html) to transform the data you are interested in. You can view metrics over arbitrary time periods and drill down to as much granularity as you've recorded (most likely the individual server level if you used Logster).
+So, I’ll show you some pretty pictures. Graphite is a web application which provides a view on to aggregated data. It provides the ability to build custom charts with the metrics you have pushed in using Logster, StatsD or something else. You can further aggregate data series and use [other functions](http://graphite.readthedocs.org/en/1.0/functions.html) to transform the data you are interested in. You can view metrics over arbitrary time periods and drill down to as much granularity as you’ve recorded (most likely the individual server level if you used Logster).
 
 ![](http://graphite.wikidot.com/local--files/screen-shots/graphite_fullscreen_800.png)
 
@@ -48,7 +48,7 @@ It also has a dashboard builder, albeit slightly lacking - we have built custom 
 
 Almost one year on and we have a number of teams in the organisation feeding data into Graphite using logster. We have data coming from browsers, from Apache, from applications through Log4J, from Squid and more. Interest is still growing but we have already seen huge benefits and an improvement to our stability response.
 
-[![](http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png)](http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png)Dashboards mounted on walls keep us up to date with problems and have become the heartbeat for our applications. When we are deploying we watch for issues closely, and we keep a weather eye on the app all day. Although we're not quite at the point where we're controlling our own deployments, our delivery team have taken a lot more responsibility for the application's stability, which can only be a good thing.
+[![](http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png)](http://markisadeveloper.files.wordpress.com/2012/05/dashboard.png)Dashboards mounted on walls keep us up to date with problems and have become the heartbeat for our applications. When we are deploying we watch for issues closely, and we keep a weather eye on the app all day. Although we’re not quite at the point where we’re controlling our own deployments, our delivery team have taken a lot more responsibility for the application’s stability, which can only be a good thing.
 
 So what sort of things do we log? In the chart below you can see our traffic pattern over a 48 hour period, with a 24 hour offset level in green for comparison. Although this is a fairly static chart it does sometimes alert us to serious stability issues when our traffic has dropped steadily, and once to a DNS misconfiguration which sent a high volume of traffic for another application to ours.
 
@@ -60,10 +60,10 @@ More changeable is a chart of error indicators such as log statements above WARN
 
 We also show a chart of the median response times for requests, and a measure of the realistic time it takes users to load pages, as reported by browsers using the [Boomerang](http://yahoo.github.com/boomerang/doc/) library. As well as reassurring us of the shape of our overall page performance, it allows us to see when our users are impacted by slowdowns caused by database issues, slow external dependencies etc.
 
-From an obscure black box a year ago to a realistic view of our application's innards today, we've come a long way.
+From an obscure black box a year ago to a realistic view of our application’s innards today, we’ve come a long way.
 
 
-#### What's next?
+#### What’s next?
 
 
 _**Alerting**_; since this information is valuable to us we intend to improve our response by hooking up something like [Graphite Tattle](https://github.com/wayfair/Graphite-Tattle) or [Nagios](http://www.nagios.org/) to provide us with alerts when metrics exceed thresholds. Further, using the [Holt Winters functions](http://graphite.readthedocs.org/en/1.0/functions.html#graphite.render.functions.holtWintersAberration) recently introduced in Graphite we intend to make these alerts smart, basing their confidence of an event on previous data.
