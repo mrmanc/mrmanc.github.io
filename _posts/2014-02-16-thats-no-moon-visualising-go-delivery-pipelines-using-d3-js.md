@@ -2,6 +2,7 @@
 author: markisadeveloper
 comments: true
 date: 2014-02-16 01:39:59+00:00
+cover: graph.png
 layout: post
 slug: thats-no-moon-visualising-go-delivery-pipelines-using-d3-js
 title: 'That''s no moon: Visualising Go Delivery Pipelines Using D3.js'
