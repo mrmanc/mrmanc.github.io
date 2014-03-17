@@ -1,4 +1,12 @@
 ---
+layout: post
+title: Surviving OSX in a corporate environment
+categories:
+- posts
+- osx
+- mac
+- proxy
+status: publish
 published: true
 ---
 
