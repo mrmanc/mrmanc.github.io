@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 Here are some tools I’ve found useful recently to survive using OSX in a locked down corporate environment.
