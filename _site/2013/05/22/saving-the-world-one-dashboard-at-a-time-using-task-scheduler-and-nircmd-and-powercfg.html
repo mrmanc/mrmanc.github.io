@@ -129,9 +129,8 @@
           <p>Hosted on <a href="http://pages.github.com/">Github Pages</a> using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://the-development.github.io/flex/">Flex</a>
         </div>
       </div>
-      <section class="content">
-        <div class="content" id="home">
-  <div id="sidebar-button">
+      <div class="content" id="home">
+          <div id="sidebar-button">
     <img src="/images/sidebar-button.png">
   </div>
   <div id="post-info">
@@ -147,29 +146,31 @@
   </div>
 
   <div class="post">
-    <p>A colleague asked us recently to make sure we turn our monitors off overnight to save power. That’s all very well, but what should we do about our dashboard? We purposefully disable power saving to make sure that the display doesn't turn off during the day, and since we never actually use it there would be nothing to wake it up!</p>
-<p><a href="http://markisadeveloper.files.wordpress.com/2013/05/dashboard-monitors.jpg"><img class="inline-image-right" alt="dashboard-monitors" src="http://markisadeveloper.files.wordpress.com/2013/05/dashboard-monitors.jpg?w=300" width="300" height="174" /></a></p>
-<p>It turns out you can easily script this using Task Scheduler, which comes with Windows. You will need to download a tool called <a href="http://www.nirsoft.net/utils/nircmd.html">NirCmd</a>, which allows you to control your monitor from the command line (amongst many other things). You already have a command called powercfg to configure the other Power Saving options from the command line.</p>
-<p>Simply create a scheduled task that runs at, say 8am, which runs the following two actions:<br />
-<code>powercfg -x monitor-timeout-ac 1<br />
+    <p>A colleague asked us recently to make sure we turn our monitors off overnight to save power. That’s all very well, but what should we do about our dashboard? We purposefully disable power saving to make sure that the display doesn&#39;t turn off during the day, and since we never actually use it there would be nothing to wake it up! It turns out you can easily script this using Task Scheduler, which comes with Windows. You will need to download a tool called <a href="http://www.nirsoft.net/utils/nircmd.html">NirCmd</a>, which allows you to control your monitor from the command line (amongst many other things). You already have a command called powercfg to configure the other Power Saving options from the command line.</p>
+
+<p><a href="http://markisadeveloper.files.wordpress.com/2013/05/dashboard-monitors.jpg"><img src="http://markisadeveloper.files.wordpress.com/2013/05/dashboard-monitors.jpg?w=300" alt="dashboard-monitors"></a></p>
+
+<p>Simply create a scheduled task that runs at, say 8am, which runs the following two actions:
+<code>powercfg -x monitor-timeout-ac 1
 C:\nircmd-x64\nircmd.exe monitor off</code></p>
-<p>and one for 7pm that runs:<br />
-<code>powercfg -x monitor-timeout-ac 0<br />
+
+<p>and one for 7pm that runs:
+<code>powercfg -x monitor-timeout-ac 0
 C:\nircmd-x64\nircmd.exe monitor on</code></p>
-<p>Make sure you put the proper path you’ve unzipped NirCmd to. You could do without the monitor timeout being changed, but if the mouse get’s nudged during quiet time, the monitor won't turn off again.</p>
+
+<p>Make sure you put the proper path you’ve unzipped NirCmd to. You could do without the monitor timeout being changed, but if the mouse get’s nudged during quiet time, the monitor won&#39;t turn off again.</p>
+
 <p>We specifically turn the monitor on in the morning after disabling the power saving option, as there is no mouse or keyboard activity to prompt it to wake - otherwise the team will just be looking at a blank screen all day.</p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 22 May 2013</span> <span class="separator">&bull;</span>
-      <span id="social">Find me on <a href="https://twitter.com/mrmanc">Twitter</a>!</span>
+      <span id="pub-date">Published on 22 May 2013</span> <span class="separator">&bull;</span> <a href="/2013/05/22/saving-the-world-one-dashboard-at-a-time-using-task-scheduler-and-nircmd-and-powercfg.html">Permalink</a>
     </p>
   </div>
-</div>
 
 
-      </section>
+      </div>
     </div>
     <script src="/scripts/responsive.js" type="text/javascript"></script>
   </body>

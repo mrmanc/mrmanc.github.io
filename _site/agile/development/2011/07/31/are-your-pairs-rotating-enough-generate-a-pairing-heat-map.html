@@ -129,9 +129,8 @@
           <p>Hosted on <a href="http://pages.github.com/">Github Pages</a> using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://the-development.github.io/flex/">Flex</a>
         </div>
       </div>
-      <section class="content">
-        <div class="content" id="home">
-  <div id="sidebar-button">
+      <div class="content" id="home">
+          <div id="sidebar-button">
     <img src="/images/sidebar-button.png">
   </div>
   <div id="post-info">
@@ -142,91 +141,91 @@
     
     <div id="info-container">
       <h1 id="title">Are your pairs rotating enough? Generate a pairing heat map.</h1>
-      <span id="date">31 Jul 2011</a>
+      <span id="date">31 July 2011</a>
     </div>
   </div>
 
   <div class="post">
-    <p>Our team have often expressed in retrospectives that they feel they should rotate more often. In fact, the irregular rotation is often a theme when trying to get to the root cause of bad design decisions and lacking code architecture.</p>
-<p>In the spirit of self-organisation we have sought not to impose pair rotation on the team, instead encouraging them to retrospect on this themselves and come up with their own scheme. The only limitation we've given is that one of the developers should remain on the story in each swap, so that some context is retained.</p>
-<p>Initially rotating every day, the team eventually decided to swap on Tuesdays and Thursdays. It doesn't happen that often though, and I'd be more comfortable seeing a bit more rotation. Sensing a bit of a smell, and wondering if there might be a pattern I decided to mine the data we had in the Subversion commit messages in an attempt to visualise the situation.</p>
-<p>Subversion, like most if not all SCMs allows you to comment each revision of the code that you commit. Often organisations impose a standard pattern for these messages using a commit hook on the Subversion server. Whilst we do not do this, we do follow a conventional structure (at least within each project). Consultants who helped us to introduce pairing suggested that both committers be referenced in the messages. So we've ended up with something looking like this:</p>
-<pre>Project: 123: [mark-c, bob-s] #456 Adding a missing test case to exercise the empty case.</pre>
+    <p>Our team have often expressed in retrospectives that they feel they should rotate more often. In fact, the irregular rotation is often a theme when trying to get to the root cause of bad design decisions and lacking code architecture. In the spirit of self-organisation we have sought not to impose pair rotation on the team, instead encouraging them to retrospect on this themselves and come up with their own scheme. The only limitation we&#39;ve given is that one of the developers should remain on the story in each swap, so that some context is retained.</p>
+
+<p>Initially rotating every day, the team eventually decided to swap on Tuesdays and Thursdays. It doesn&#39;t happen that often though, and I&#39;d be more comfortable seeing a bit more rotation. Sensing a bit of a smell, and wondering if there might be a pattern I decided to mine the data we had in the Subversion commit messages in an attempt to visualise the situation.</p>
+
+<p>Subversion, like most if not all SCMs allows you to comment each revision of the code that you commit. Often organisations impose a standard pattern for these messages using a commit hook on the Subversion server. Whilst we do not do this, we do follow a conventional structure (at least within each project). Consultants who helped us to introduce pairing suggested that both committers be referenced in the messages. So we&#39;ve ended up with something looking like this:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">Project: 123: [mark-c, bob-s] #456 Adding a missing test case to exercise the empty case.
+</code></pre></div>
 <p>Using this exercise as an opportunity to explore Awk a little further than my usual single like examples, I wrote a script to build a two dimensional array indexed by each of the pair members containing the frequency of commit messages for the given pair.</p>
-<p>I then copied this data into Excel, the handy novice statistician's friend, and build a pivot table from the results with columns representing one committer and rows representing the second committer. Using the conditional formatting in Excel 2010 allowed me to quickly colour the cells according to frequency.</p>
-<p>So what am I left with? An easy to read heat map of how often people commit with each other. Granted, it's not a true representation of how often Mark and Bob work together, as it is skewed by the fact that Mark commits more often when he works with Bob, than when he works with Fred.</p>
-<p><a href="http://markisadeveloper.files.wordpress.com/2011/07/pairingheatmap.png"><img class="aligncenter size-full wp-image-38" title="Pairing Heatmap" src="http://markisadeveloper.files.wordpress.com/2011/07/pairingheatmap.png" alt="Pairing Heatmap" width="510" height="378" /></a><br />
-<a href="http://markisadeveloper.files.wordpress.com/2011/07/pairingheatmap.png">Full size</a><br />
-<a href="http://markisadeveloper.files.wordpress.com/2011/07/pairing.pdf">PDF</a></p>
+
+<p>I then copied this data into Excel, the handy novice statistician&#39;s friend, and build a pivot table from the results with columns representing one committer and rows representing the second committer. Using the conditional formatting in Excel 2010 allowed me to quickly colour the cells according to frequency.</p>
+
+<p>So what am I left with? An easy to read heat map of how often people commit with each other. Granted, it&#39;s not a true representation of how often Mark and Bob work together, as it is skewed by the fact that Mark commits more often when he works with Bob, than when he works with Fred.</p>
+
+<p><img src="/images/pairingheatmap.png" alt="Pairing Heatmap"></p>
+
+<p><a href="/files/pairing.pdf">PDF</a></p>
+
 <p>The team were fascinated, as people tend to be with any visualisation. Without drawing too many conclusions I have left the chart visible in the area where developers have their morning standup and organise rotation so we shall see what happens.</p>
-<p>I'm not going to speculate too much about why rotation isn't happening enough - the focus of this article is on working out how often the team swaps. Suffice to say I think there are deeper reasons than just forgetting it's a Tuesday or being a at a convenient point in development.</p>
-<p>A note about the script:</p>
-<p>I chose Awk because I wanted to get better at parsing log files etc and aggregating data - I'm sure there are much more appropriate technologies. I've provided the source. It expects the subversion log to be piped into it on standard input. I suggest that unless you are lucky enough that your commit message format exactly matches ours, you export the Subversion log to a text file to facilitate your adaption of the regexp (because 'svn log' can be *slow*).</p>
-<p>In a nutshell it finds interesting lines in the log, extracts the usernames, discards any commits for departed developers, translates the username variations to one name (since variety is the spice of life), increments an array value and summarises the results to standard out in a format you can easily paste into Excel. I'm sure there are better visualisation technologies which you could probably script but I was aiming for the quick and dirty (yet reproducible). I've also provided the shell of the spreadsheet that I used.</p>
-<p>You should invoke it using 'svn log | processpairing' or 'cat svn.log | processpairing' if you chose to output the log to a file.</p>
-<p><b>Ideas for improvement:</b></p>
+
+<p>I&#39;m not going to speculate too much about why rotation isn&#39;t happening enough - the focus of this article is on working out how often the team swaps. Suffice to say I think there are deeper reasons than just forgetting it&#39;s a Tuesday or being a at a convenient point in development.</p>
+
+<h3>A note about the script:</h3>
+
+<p>I chose Awk because I wanted to get better at parsing log files etc and aggregating data - I&#39;m sure there are much more appropriate technologies. I&#39;ve provided the source. It expects the subversion log to be piped into it on standard input. I suggest that unless you are lucky enough that your commit message format exactly matches ours, you export the Subversion log to a text file to facilitate your adaption of the regexp (because &#39;svn log&#39; can be <em>slow</em>).</p>
+
+<p>In a nutshell it finds interesting lines in the log, extracts the usernames, discards any commits for departed developers, translates the username variations to one name (since variety is the spice of life), increments an array value and summarises the results to standard out in a format you can easily paste into Excel. I&#39;m sure there are better visualisation technologies which you could probably script but I was aiming for the quick and dirty (yet reproducible). I&#39;ve also provided the shell of the spreadsheet that I used.</p>
+
+<p>You should invoke it using &#39;svn log | processpairing&#39; or &#39;cat svn.log | processpairing&#39; if you chose to output the log to a file.</p>
+
+<h3>Ideas for improvement</h3>
+
 <ul>
 <li>Scriptable visualisation</li>
 <li>Automating it in our pipeline</li>
 </ul>
-<p><code> #! /bin/gawk -f<br />
-BEGIN {<br />
-FS="[\\[\\]]";<br />
-SUBSEP=",";<br />
-substitute["bob-s"]="Bob";<br />
-substitute["bob"]="Bob";<br />
-substitute["bob s"]="Bob";<br />
-substitute["mark-c"]="Mark";<br />
-substitute["mark-cr"]="Mark";<br />
-namesToIgnore="(dave|stuart|anyone|else|who|has|left|project)"<br />
-}<br />
-# if line matches format ... [name, name] ...<br />
-/^.*\[[a-zA-Z-]+[ ]*,[ ]*[a-zA-Z-]+\].*$/ {<br />
-# split the pair names into array of names<br />
-split($2,names,"[, ]+");<br />
-# check whether we are interested in this pair<br />
-if (match(names[1],namesToIgnore) == false &amp;&amp; match(names[2],namesToIgnore) == false) {<br />
-# compensate for variety in the names people specify in commit messages<br />
-if(names[1] in substitute) {<br />
-name1=substitute[names[1]]<br />
-}<br />
-else {<br />
-name1=names[1]<br />
-}<br />
-if(names[2] in substitute) {<br />
-name2=substitute[names[2]]<br />
-}<br />
-else {<br />
-name2=names[2]<br />
-}<br />
-if (name1 &lt; name2) {<br />
-pairfreq[name1,name2] += 1;<br />
-}<br />
-else {<br />
-pairfreq[name2,name1] += 1;<br />
-}<br />
-}<br />
-}<br />
-END {<br />
-numberOfPairings = asorti(pairfreq,pairs)<br />
-for (pairNumber; pairNumber &lt;= numberOfPairings; pairNumber++) {<br />
-split(pairs[pairNumber],pairnames,",");<br />
-print "\""pairnames[1]"\",\""pairnames[2]"\",\""pairfreq[pairs[pairNumber]]"\"";<br />
-}<br />
-}<br />
-</code></p>
+
+<div class="highlight"><pre><code class="awk"><span class="sr">/^.*\[[a-zA-Z-]+[ ]*,[ ]*[a-zA-Z-]+\].*$/</span> <span class="p">{</span>
+  <span class="c1"># split the pair names into array of names</span>
+  <span class="kr">split</span><span class="p">(</span><span class="o">$</span><span class="mi">2</span><span class="p">,</span><span class="nx">names</span><span class="p">,</span><span class="s2">&quot;[, ]+&quot;</span><span class="p">);</span>
+  <span class="c1"># check whether we are interested in this pair</span>
+  <span class="k">if</span> <span class="p">(</span><span class="kr">match</span><span class="p">(</span><span class="nx">names</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="nx">namesToIgnore</span><span class="p">)</span> <span class="o">==</span> <span class="nx">false</span> <span class="o">&amp;&amp;</span> <span class="kr">match</span><span class="p">(</span><span class="nx">names</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="nx">namesToIgnore</span><span class="p">)</span> <span class="o">==</span> <span class="nx">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1"># compensate for variety in the names people specify in commit messages</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">names</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">in</span> <span class="nx">substitute</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">name1</span><span class="o">=</span><span class="nx">substitute</span><span class="p">[</span><span class="nx">names</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="p">}</span>
+    <span class="nx">else</span> <span class="p">{</span>
+      <span class="nx">name1</span><span class="o">=</span><span class="nx">names</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">names</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">in</span> <span class="nx">substitute</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">name2</span><span class="o">=</span><span class="nx">substitute</span><span class="p">[</span><span class="nx">names</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>
+    <span class="p">}</span>
+    <span class="nx">else</span> <span class="p">{</span>
+      <span class="nx">name2</span><span class="o">=</span><span class="nx">names</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">name1</span> <span class="o">&lt;</span> <span class="nx">name2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">pairfreq</span><span class="p">[</span><span class="nx">name1</span><span class="p">,</span><span class="nx">name2</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">else</span> <span class="p">{</span>
+      <span class="nx">pairfreq</span><span class="p">[</span><span class="nx">name2</span><span class="p">,</span><span class="nx">name1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">END</span> <span class="p">{</span>
+  <span class="nx">numberOfPairings</span> <span class="o">=</span> <span class="nx">asorti</span><span class="p">(</span><span class="nx">pairfreq</span><span class="p">,</span><span class="nx">pairs</span><span class="p">)</span>
+  <span class="k">for</span> <span class="p">(</span><span class="nx">pairNumber</span><span class="p">;</span> <span class="nx">pairNumber</span> <span class="o">&lt;=</span> <span class="nx">numberOfPairings</span><span class="p">;</span> <span class="nx">pairNumber</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">split</span><span class="p">(</span><span class="nx">pairs</span><span class="p">[</span><span class="nx">pairNumber</span><span class="p">],</span><span class="nx">pairnames</span><span class="p">,</span><span class="s2">&quot;,&quot;</span><span class="p">);</span>
+    <span class="kr">print</span> <span class="s2">&quot;\&quot;&quot;</span><span class="nx">pairnames</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="s2">&quot;\&quot;,\&quot;&quot;</span><span class="nx">pairnames</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="s2">&quot;\&quot;,\&quot;&quot;</span><span class="nx">pairfreq</span><span class="p">[</span><span class="nx">pairs</span><span class="p">[</span><span class="nx">pairNumber</span><span class="p">]]</span><span class="s2">&quot;\&quot;&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 31 Jul 2011</span> <span class="separator">&bull;</span>
-      <span id="social">Find me on <a href="https://twitter.com/mrmanc">Twitter</a>!</span>
+      <span id="pub-date">Published on 31 July 2011</span> <span class="separator">&bull;</span> <a href="/agile/development/2011/07/31/are-your-pairs-rotating-enough-generate-a-pairing-heat-map.html">Permalink</a>
     </p>
   </div>
-</div>
 
 
-      </section>
+      </div>
     </div>
     <script src="/scripts/responsive.js" type="text/javascript"></script>
   </body>

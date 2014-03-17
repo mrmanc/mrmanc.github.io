@@ -1,3 +1,4 @@
 name: Mark Crossfield
 markdown: redcarpet
 pygments: true
+paginate: 10
