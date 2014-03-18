@@ -4,7 +4,7 @@ comments: true
 date: 2011-07-31 21:50:29+00:00
 layout: post
 slug: are-your-pairs-rotating-enough-generate-a-pairing-heat-map
-title: Are your pairs rotating enough? Generate a pairing heat map.
+title: Are your pairs rotating enough? Generate a pairing heat map
 wordpress_id: 13
 cover: heatmap.jpg
 categories:

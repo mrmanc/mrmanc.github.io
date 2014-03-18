@@ -5,7 +5,7 @@ date: 2012-06-26 16:54:04+00:00
 layout: post
 slug: ascii-graph-pivot-your-standard-out
 cover: histogram.jpg
-title: Ascii Graph - pivot your standard out
+title: Ascii Graph—pivot your standard out
 wordpress_id: 60
 categories:
 - Development
@@ -25,7 +25,7 @@ tags:
 - Visualisation
 ---
 
-**Update: I’ve rewritten this with more features and better code - [take a look](https://github.com/mrmanc/log-ninja#distribution)!**  
+**Update: I’ve rewritten this with more features and better code—[take a look](https://github.com/mrmanc/log-ninja#distribution)!**  
 I spend literally hours a week just trawling logs, often wanting to visualise what I’m seeing. Yes, I could faff with Splunk or something else expensive (yes, I know there is a free version), but sometimes I just want to know what a column of response times looks like.
 
 Previously I was quite a fan of using uniq -c for this aggregation, like this:

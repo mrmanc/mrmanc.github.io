@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Using OSX at work behind a proxy
+title: Using OS X at work behind a proxy
 categories:
 - posts
-- osx
+- os x
 - mac
 - proxy
 status: publish
 published: true
 ---
 
-Here are some tools I’ve found useful recently to work effectively using OSX behind a proxy at work.
+Here are some tools I’ve found useful recently to work effectively using OS X behind a proxy at work.
 
 [Command Line Proxy Control](http://tomayko.com/writings/os-x-network-location-support-from-the-command-line)
 
