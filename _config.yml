@@ -2,4 +2,4 @@ name: Mark Crossfield
 markdown: redcarpet
 pygments: true
 paginate: 10
-permalink: /:day-:month-:year-:title.html
+permalink: /:year-:month-:day-:title.html
