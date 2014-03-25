@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Free hosting with Github Pages
+categories: hosting blog github
 cover: GitHub_Logo.png
 date:   2014-03-16 21:58:00
-categories: posts
-status: publish
 ---
 
 

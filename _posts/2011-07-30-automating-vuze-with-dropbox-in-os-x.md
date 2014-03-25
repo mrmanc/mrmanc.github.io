@@ -1,11 +1,6 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2011-07-30 21:20:13+00:00
 layout: post
-slug: automating-vuze-with-dropbox-in-os-x
 title: Automating Vuze with Dropbox (in OS X)
-wordpress_id: 19
 categories:
 - Life Hacks
 tags:
@@ -16,6 +11,7 @@ tags:
 - Mac
 - OSX
 - Vuze
+date: 2011-07-30 21:20:13+00:00
 ---
 This is a simple one, but I’m quite pleased with it, and I don’t think it jumps out as an obvious tweak. Fuze (formally Azureus) is a great BitTorrent client, which has some great features like transcoding and subscriptions. I’ve previously had it configured to download everything from an RSS feed, which was built from my bookmarks in Mininova. But they don’t have so many torrents these days, and I wanted a set up which wasn’t dependent on one site.
 

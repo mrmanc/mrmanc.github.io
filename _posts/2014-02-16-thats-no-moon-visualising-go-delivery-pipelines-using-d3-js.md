@@ -1,16 +1,12 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2014-02-16 01:39:59+00:00
-cover: graph.png
 layout: post
-slug: thats-no-moon-visualising-go-delivery-pipelines-using-d3-js
 title: 'That’s no moon: Visualising Go Delivery Pipelines Using D3.js'
-wordpress_id: 182
 categories:
 - Continuous Delivery
 - Development
 - Visualisation
+cover: graph.png
+date: 2014-02-16 01:39:59+00:00
 ---
 
 We’ve been doing quite a bit of work improving our Go environment recently, and correcting one or two continuous integration anti patterns we’d introduced. I wanted to find a way to see the effect of these changes, and it occurred to me that it might be possible to use D3.js to build the view. I have had good use cases for graph diagrams in the past but got bored looking for a good way to draw them programatically. I’d even lazily fallen back on the [Neo4J console](http://console.neo4j.org/) to program the graph and then visualise it (and amusingly I now see that that page is using D3.js behind the scenes).

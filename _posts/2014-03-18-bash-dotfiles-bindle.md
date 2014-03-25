@@ -1,5 +1,4 @@
 ---
-author: mark
 layout: post
 title: Take your scripts with you
 categories:

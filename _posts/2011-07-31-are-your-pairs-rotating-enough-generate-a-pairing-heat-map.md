@@ -1,12 +1,6 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2011-07-31 21:50:29+00:00
 layout: post
-slug: are-your-pairs-rotating-enough-generate-a-pairing-heat-map
 title: Are your pairs rotating enough? Generate a pairing heat map
-wordpress_id: 13
-cover: heatmap.jpg
 categories:
 - Agile
 - Development
@@ -16,6 +10,8 @@ tags:
 - Pairing
 - Rotation
 - XP
+cover: heatmap.jpg
+date: 2011-07-31 21:50:29+00:00
 ---
 
 Our team have often expressed in retrospectives that they feel they should rotate more often. In fact, the irregular rotation is often a theme when trying to get to the root cause of bad design decisions and lacking code architecture. In the spirit of self-organisation we have sought not to impose pair rotation on the team, instead encouraging them to retrospect on this themselves and come up with their own scheme. The only limitation we’ve given is that one of the developers should remain on the story in each swap, so that some context is retained.

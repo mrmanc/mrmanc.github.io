@@ -6,8 +6,6 @@ categories:
 - os x
 - mac
 - proxy
-status: publish
-published: true
 ---
 
 Here are some tools I’ve found useful recently to work effectively using OS X behind a proxy at work.

@@ -1,11 +1,6 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2012-05-10 23:58:10+00:00
 layout: post
-slug: meet-graphite
 title: Meet Graphite
-wordpress_id: 62
 categories:
 - Agile
 - Development
@@ -20,6 +15,7 @@ tags:
 - measure
 - metrics
 - stats
+date: 2012-05-10 23:58:10+00:00
 ---
 
 Last year i was fascinated by a [presentation](http://velocityconf.com/velocity2011/public/schedule/detail/17776) [[slides]](http://www.slideshare.net/mikebrittain/metrics-driven-engineering-at-etsy) by Etsy about their approach of metrics driven engineering - see their blog post - [Measure Anything, Measure Everything](http://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/). They started with some questions: how many of us had access to our production logs (a reassuringly high amount), and how many of us could tell them how many hits our application was getting right now / how many hits it got this time last year.
