@@ -10,7 +10,6 @@ categories:
 - Dotfiles
 - Command line
 - Configuration
-published: false
 cover: china-country-postman.jpg
 ---
 
