@@ -17,7 +17,7 @@ I often feel quite nomadic when using Bash. I’m somewhat a hobo developer, mov
 
 In case you’re not familiar with the concept of a dotfiles project, the term dot file refers to settings files whose filename typically starts with a dot in UNIX. For example, there’s your `.bash_profile` file which indicates what should be run when you login. You may have Git settings defined in `.gitconfig`. A dotfiles project is one which lets users synchronise their dotfiles across different machines.
 
-Before starting my own, I had a look at some of the projects that already exist, indexed on [GitHub does dotfiles](http://dotfiles.github.io/). A popular project is [Oh-My-Zsh](http://ohmyz.sh/), which may suit you if you use Zsh as your shell. As a homeless developer I have to use what I find, so I wanted to stick with Bash. Zach Holman has an [interesting project](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/) with some ideas I really liked. But I didn’t find anything for Bash that I really liked.
+Before starting my own, I had a look at some of the projects that already exist, indexed on [GitHub does dotfiles](http://dotfiles.github.io/). A popular project is [Oh-My-Zsh](http://ohmyz.sh/), which may suit you if you use Zsh as your shell. As a itinerate developer I have to use what I find, so I wanted to stick with Bash. Zach Holman has an [interesting project](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/) with some ideas I really liked. But I didn’t find anything for Bash that I really liked.
 
 I had been surprised that the installation of some dotfiles projects does a lot more than installing some dotfiles, doing things like changing Mac settings etc. This is my Bash bindle—not my OS X bindle—so I didn’t want that.
 
