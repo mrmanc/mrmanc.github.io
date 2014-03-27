@@ -1,12 +1,8 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2013-05-22 13:05:46+00:00
 layout: post
-cover: dashing.jpg
-slug: saving-the-world-one-dashboard-at-a-time-using-task-scheduler-and-nircmd-and-powercfg
 title: Saving the world, one dashboard at a time
-wordpress_id: 171
+cover: dashing.jpg
+date: 2013-05-22 13:05:46+00:00
 ---
 
 A colleague asked us recently to make sure we turn our monitors off overnight to save power. That’s all very well, but what should we do about our dashboard? We purposefully disable power saving to make sure that the display doesn’t turn off during the day, and since we never actually use it there would be nothing to wake it up! It turns out you can easily script this using Task Scheduler, which comes with Windows. You will need to download a tool called [NirCmd](http://www.nirsoft.net/utils/nircmd.html), which allows you to control your monitor from the command line (amongst many other things). You already have a command called powercfg to configure the other Power Saving options from the command line.

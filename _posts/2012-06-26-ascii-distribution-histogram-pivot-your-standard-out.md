@@ -1,12 +1,6 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2012-06-26 16:54:04+00:00
 layout: post
-slug: ascii-graph-pivot-your-standard-out
-cover: histogram.jpg
-title: Ascii Graph—pivot your standard out
-wordpress_id: 60
+title: Ascii Distribution Histogram—pivot your standard out
 categories:
 - Development
 - Visualisation
@@ -16,6 +10,7 @@ tags:
 - Bar Chart
 - Bash
 - Curve
+- Graph
 - Distribution
 - Histogram
 - Logs
@@ -23,6 +18,10 @@ tags:
 - Script
 - Shell
 - Visualisation
+- UNIX
+- Command Line
+cover: histogram.jpg
+date: 2012-06-26 16:54:04+00:00
 ---
 
 **Update: I’ve rewritten this with more features and better code—[take a look](https://github.com/mrmanc/log-ninja#distribution)!**  

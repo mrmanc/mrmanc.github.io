@@ -1,12 +1,6 @@
 ---
-author: markisadeveloper
-comments: true
-date: 2012-06-25 22:56:06+00:00
 layout: post
-cover: ruler.jpg
-slug: simply-measure-anything-with-metriclogster
 title: Simply Measure Anything with MetricLogster
-wordpress_id: 121
 tags:
 - graphite
 - Logs
@@ -15,6 +9,8 @@ tags:
 - metrics
 - Monitoring
 - Visualisation
+cover: ruler.jpg
+date: 2012-06-25 22:56:06+00:00
 ---
 
 Okay, so my [previous post](http://markisadeveloper.wordpress.com/2012/05/10/meet-graphite/) is a long overdue summary of how we are visualising application metrics using Graphite. We are writing custom Logster parsers which scan our log files and push interesting things into Graphite. This means that to get a new metric into Graphite we need to add it to our log files (unless it already exists), and adapt or create a python Logster parser to understand whatever we’ve logged. This parser then needs to be deployed to our server running logster and a graph built. The biggest blocker we’ve seen with this approach is the necessity for the engineer to understand how to write Python, where to find and test the Logster parsers, and how to deploy the parser to the Logster server. Personally, this means either doing the work myself or explaining the peculiarities of Python white space handling to yet another person. There must be a better way.
