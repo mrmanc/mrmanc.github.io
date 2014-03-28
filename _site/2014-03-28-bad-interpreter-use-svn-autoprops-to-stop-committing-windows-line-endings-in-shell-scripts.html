@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Using OS X at work behind a proxy&mdash;Mark Crossfield</title>
+      <title>Bad Interpreter—SVN autoprops save the day&mdash;Mark Crossfield</title>
       <meta name="viewport" content="width=device-width">
 
       <!-- syntax highlighting CSS -->
@@ -160,28 +160,31 @@
   <div id="post-info">
     
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/apple-tree.jpg">
+      <img id="cover-photo" src="/images/bad-interpreter.jpg">
     </div>
     
     <div id="info-container">
-      <h1 id="title">Using OS X at work behind a proxy</h1>
-      <span id="date">17 March 2014</a>
+      <h1 id="title">Bad Interpreter—SVN autoprops save the day</h1>
+      <span id="date">28 March 2014</a>
     </div>
   </div>
 
   <div class="post">
-    <p>Here are some tools I’ve found useful recently to work effectively using OS X behind a proxy at work.</p>
+    <p>A number of times I’ve had to fix problems with shell scripts which have been edited or created on a Windows system and committed with Windows CRLF line endings, then checked out on to a UNIX system and executed. Perhaps you’ve seen this output somewhere?</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">/bin/sh: filename.sh: /bin/bash^M: bad interpreter: No such file or directory  
+</code></pre></div>
+<p>Another common one is scripts which are not marked as executable, meaning that they can’t be run whenever then end up where they’re meant to be.</p>
 
-<p><a href="http://tomayko.com/writings/os-x-network-location-support-from-the-command-line">Command Line Proxy Control</a></p>
+<p>This is very easy to fix on a case by case basis by running <code>svn propset svn:eol-style &quot;native&quot; filename.sh</code> and <code>svn propset svn:executable &quot;*&quot; filename.sh</code>. The first tells Subversion to translate line endings to suit the system you are on—LF on UNIX and CRLF on Windows. The second tells it then when it is on UNIX systems it should set the executable permission for users, groups and others.</p>
 
-<p><a href="http://www.jumbodumbothoughts.com/2014/02/proxy-server-controlplane.html">On Automatically Changing your Network Location and Proxy Servers with Controlplane</a></p>
+<p>However, I have a terrible memory so I forget to recite such incantations. A better idea is to configure your subversion client to do this automatically. You can enable auto-props by editing <code>%USERPROFILE%\Application Data\Subversion\config</code> on Windows or <code>~/.subversion/config</code> on UNIX systems. You want to make sure that you have an uncommented line saying <code>enable-auto-props = yes</code> and further down in the file extensions section a line saying <code>*.sh = svn:eol-style=native;svn:executable</code>. From memory it doesn’t ship with a configured eol-style of native so you’ll have to change that (or leave it as LF if you’re not feeling kind towards Windows users—they’ll struggle to edit the file in some editors).</p>
 
-<p>Image credit: <a href="http://www.flickr.com/photos/mattjiggins/3942903508/">Apple Tree</a></p>
+<p>There—job done. Now you can forget about fiddling with properties until you move to a new system. Of course you might want to take this setting with you—perhaps you need a <a href="2014-03-25-bash-dotfiles-bindle.html">dotfiles project</a> (yes I know I haven’t put it in there… yet)?</p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 17 March 2014</span> <span class="separator">&bull;</span> <a href="/2014-03-17-using-os-x-at-work-behind-a-proxy.html">Permalink</a>
+      <span id="pub-date">Published on 28 March 2014</span> <span class="separator">&bull;</span> <a href="/2014-03-28-bad-interpreter-use-svn-autoprops-to-stop-committing-windows-line-endings-in-shell-scripts.html">Permalink</a>
     </p>
   </div>
 
