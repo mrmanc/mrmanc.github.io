@@ -15,7 +15,7 @@ Static analysis has been a widely used tool in development teams for some time n
 <blockquote class="twitter-tweet" lang="en"><p>Seriously, if you write shell/bash, and want it not to suck, you should use some of this <a href="https://t.co/nKfTRWqHMA">https://t.co/nKfTRWqHMA</a> if you don’t, lucky you!</p>&mdash; Ben Hughes (@benjammingh) <a href="https://twitter.com/benjammingh/statuses/451506083128152064">April 2, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I use OS X so I am lucky enough to be able to install it locally. The [installation instructions](https://github.com/koalaman/shellcheck#building-with-cabal) don’t mention Windows (although they do cover Debian & Fedora), so I’m gonna guess you’ll struggle to get it working under something like Cygwin. In any case, there is an awesome UI on [http://www.shellcheck.net/](http://www.shellcheck.net/) which will give you feedback on scripts you have pasted in, with [clickable links](https://github.com/koalaman/shellcheck/wiki/SC2086) to wiki pages explaining any wisdom which doesn’t seem obvious to you.
+I use OS X so I am lucky enough to be able to install it locally. The [installation instructions](https://github.com/koalaman/shellcheck#building-with-cabal) don’t mention Windows (although they do cover Debian & Fedora), so I’m gonna guess you’ll struggle to get it working under something like Cygwin. In any case, there is an awesome UI on <http://www.shellcheck.net/> which will give you feedback on scripts you have pasted in, with [clickable links](https://github.com/koalaman/shellcheck/wiki/SC2086) to wiki pages explaining any wisdom which doesn’t seem obvious to you.
 
 # OS X Installation
 
@@ -210,7 +210,7 @@ json-0.7 depends on syb-0.4.1 which failed to install.
 syb-0.4.1 failed during the configure step. The exception was:
 ExitFailure 1
 ```
-
+<a name="syb"></a>
 The syb dependency failed to install, but it worked when I installed it directly:
 
 ```
@@ -234,3 +234,5 @@ Configuring ShellCheck-0.3.2...
 Building ShellCheck-0.3.2...
 Installed ShellCheck-0.3.2
 ```
+
+Success! \o/
