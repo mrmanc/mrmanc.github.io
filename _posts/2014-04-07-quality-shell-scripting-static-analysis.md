@@ -24,12 +24,12 @@ If you are using OS X you can install using (mostly) brew, but I ran into a few 
 These are the steps you should be able to use to install. There’s a more detailed walkthrough with some of the error messages I saw underneath.
 
     brew install cabal-install
-    git clone https://github.com/koalaman/shellcheck.git
-    cd shellcheck
-    cabal install
     cabal update
     cabal install cabal-install
     cabal install syb
+    git clone https://github.com/koalaman/shellcheck.git
+    cd shellcheck
+    cabal install
 
 Then stick `export PATH=$HOME/.cabal/bin:$PATH` in your .bash_profile (or similar) and you're done. Now you can run `shellcheck script/test/unit/TEST_compare-versions.sh` and get output like the below! I got many more problems reported, but I didn’t think you’d want to read them all…
 
