@@ -8,7 +8,6 @@ categories:
 - UNIX
 - Shell
 - Testing
-published: true
 ---
 
 I’ve found myself wanting the convenience of some Bash unit testing for the third time, and not wanting to develop yet another set of assertion functions I thought it was about time to find something reusable. I’m looking to do the basic asserts, with some regular expression matching and a sprinkling of [self shunt](http://c2.com/cgi/wiki?SelfShuntPattern) (with command interactions intercepted by replacing commands like echo with functions within the scope of the test). I should credit [Ross Beazley](https://twitter.com/be4zley/) for starting me off on this approach. This time I’m resisting the temptation to start a new project and thought I’d find something to fork and improve. So here are a few of the projects I found and a bit of analysis.

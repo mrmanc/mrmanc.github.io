@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Static Analysis of Shell Scripts&mdash;Mark Crossfield</title>
+      <meta name="viewport" content="width=device-width">
+
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="/css/responsive.css">
+
+      <!-- Google Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-352611-12', 'markcrossfield.co.uk');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div class="site">
+      <div class="sidebar" id="sidebar">
+        <div class="header">
+          <a href="/"><img id="logo" src="/images/logo.png" width="128" height="99"></a>
+          <span class="tagline">Developer, engineer, trouble maker</span>
+        </div>
+        <div class="footer">
+          <span id="footer-links">
+            <a href="/about/" class="footer-link">About Mark</a> <span class="separator">&bull;</span>
+            <a href="https://twitter.com/mrmanc" class="footer-link">@mrmanc</a> <span class="separator">&bull;</span>
+            <a href="https://github.com/mrmanc" class="footer-link">GitHub</a>
+          </span>
+        </div>
+        <div class="posts">
+          <ul class="posts-list">
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-04-07-quality-shell-scripting-static-analysis.html">
+                  <span class="post-date">07 Apr 2014</span>
+                  Static Analysis of Shell Scripts
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-03-28-bad-interpreter-use-svn-autoprops-to-stop-committing-windows-line-endings-in-shell-scripts.html">
+                  <span class="post-date">28 Mar 2014</span>
+                  Bad Interpreter—SVN autoprops save the day
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-03-27-bash-shell-unit-testing.html">
+                  <span class="post-date">27 Mar 2014</span>
+                  Test Driven Development in Bash
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-03-25-bash-dotfiles-bindle.html">
+                  <span class="post-date">25 Mar 2014</span>
+                  Take your scripts with you
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-03-17-using-os-x-at-work-behind-a-proxy.html">
+                  <span class="post-date">17 Mar 2014</span>
+                  Using OS X at work behind a proxy
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-03-16-free-hosting-with-github-pages.html">
+                  <span class="post-date">16 Mar 2014</span>
+                  Free hosting with Github Pages
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2014-02-16-thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html">
+                  <span class="post-date">16 Feb 2014</span>
+                  That’s no moon: Visualising Go Delivery Pipelines Using D3.js
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2013-05-22-saving-the-world-one-dashboard-at-a-time-using-task-scheduler-and-nircmd-and-powercfg.html">
+                  <span class="post-date">22 May 2013</span>
+                  Saving the world, one dashboard at a time
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2012-06-26-ascii-distribution-histogram-pivot-your-standard-out.html">
+                  <span class="post-date">26 Jun 2012</span>
+                  Ascii Distribution Histogram—pivot your standard out
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2012-06-25-simply-measure-anything-with-metriclogster.html">
+                  <span class="post-date">25 Jun 2012</span>
+                  Simply Measure Anything with MetricLogster
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2012-05-10-meet-graphite.html">
+                  <span class="post-date">10 May 2012</span>
+                  Meet Graphite
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2012-02-15-fast-feedback.html">
+                  <span class="post-date">15 Feb 2012</span>
+                  Fast Feedback
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2011-07-31-are-your-pairs-rotating-enough-generate-a-pairing-heat-map.html">
+                  <span class="post-date">31 Jul 2011</span>
+                  Are your pairs rotating enough? Generate a pairing heat map
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2011-07-30-automating-vuze-with-dropbox-in-os-x.html">
+                  <span class="post-date">30 Jul 2011</span>
+                  Automating Vuze with Dropbox (in OS X)
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/2011-06-05-hello.html">
+                  <span class="post-date">05 Jun 2011</span>
+                  Hello!
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="footer">
+          <p>Hosted on <a href="http://pages.github.com/">Github Pages</a> using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://the-development.github.io/flex/">Flex</a>
+        </div>
+      </div>
+      <div class="content" id="home">
+          <div id="sidebar-button">
+    <img src="/images/sidebar-button.png" width="32" height="32">
+  </div>
+  <div id="post-info">
+    
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/shellcheck.png">
+    </div>
+    
+    <div id="info-container">
+      <h1 id="title">Static Analysis of Shell Scripts</h1>
+      <span id="date">7 April 2014</a>
+    </div>
+  </div>
+
+  <div class="post">
+    <p>Static analysis has been a widely used tool in development teams for some time now. So when I saw this tweet about <a href="https://github.com/koalaman/shellcheck">ShellCheck</a> I was very interested. I’ve looked for some wisdom about shell scripting best practices in the past, and not found much useful. Plus, <a href="http://programmer.97things.oreilly.com/wiki/index.php/Automate_Your_Coding_Standard">automating your coding standards</a> being one of the <a href="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CC8QFjAA&amp;url=http%3A%2F%2Fwww.amazon.co.uk%2FThings-Every-Programmer-Should-Know%2Fdp%2F0596809484&amp;ei=X3s9U_7YHrGV7Abns4DYDQ&amp;usg=AFQjCNF6I5nBRCYnyAiIdatoviQRoeuWCA&amp;sig2=U6wPuwGjIjF0xNQZXstVTw">97 Things Every Programmer Should Know</a>, perhaps a tool like this is much more valuable.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Seriously, if you write shell/bash, and want it not to suck, you should use some of this <a href="https://t.co/nKfTRWqHMA">https://t.co/nKfTRWqHMA</a> if you don’t, lucky you!</p>&mdash; Ben Hughes (@benjammingh) <a href="https://twitter.com/benjammingh/statuses/451506083128152064">April 2, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I use OS X so I am lucky enough to be able to install it locally. The <a href="https://github.com/koalaman/shellcheck#building-with-cabal">installation instructions</a> don’t mention Windows (although they do cover Debian &amp; Fedora), so I’m gonna guess you’ll struggle to get it working under something like Cygwin. In any case, there is an awesome UI on <a href="http://www.shellcheck.net/">http://www.shellcheck.net/</a> which will give you feedback on scripts you have pasted in, with <a href="https://github.com/koalaman/shellcheck/wiki/SC2086">clickable links</a> to wiki pages explaining any wisdom which doesn’t seem obvious to you.</p>
+
+<h1>OS X Installation</h1>
+
+<p>If you are using OS X you can install using (mostly) brew, but I ran into a few difficulties so I thought I’d include them here, in case I forget to contribute to the documentation.</p>
+
+<p>These are the steps you should be able to use to install. There’s a more detailed walkthrough with some of the error messages I saw underneath.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">brew install cabal-install
+git clone https://github.com/koalaman/shellcheck.git
+cd shellcheck
+cabal install
+cabal update
+cabal install cabal-install
+cabal install syb
+</code></pre></div>
+<p>Then stick <code>export PATH=$HOME/.cabal/bin:$PATH</code> in your .bash_profile (or similar) and you&#39;re done. Now you can run <code>shellcheck script/test/unit/TEST_compare-versions.sh</code> and get output like the below! I got many more problems reported, but I didn’t think you’d want to read them all…</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">…
+In script/test/unit/TEST_compare-versions.sh line 60:
+    successTestResult $TEST_NAME
+                          ^-- SC2086: Double quote to prevent globbing and word splitting.
+…
+</code></pre></div>
+<p>In fact that’s a great example of something that catches me out a lot. Also, the exit code will indicate an error, so you can even put this in you CI build to make sure you get fast feedback when you do something silly. The script can take a number of file arguments, and works with globbed paths. If any of the files specified have issues then the exit code will indicate this, so you just need to run something like <code>shellcheck *.sh</code> to see whether you have any problems.</p>
+
+<p>It might even be a useful tool to make available to your continuous integration systems to provide fast feedback to developers working on shell scripts.</p>
+
+<h1>Detailed Walkthrough</h1>
+
+<p>Install cabal</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~ $ brew install cabal-install
+==&gt; Installing dependencies for cabal-install: apple-gcc42, ghc
+==&gt; Installing cabal-install dependency: apple-gcc42
+==&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/apple-gcc42-4.2.1-5666.3.mavericks.bottle.2.tar.gz
+######################################################################## 100.0%
+==&gt; Pouring apple-gcc42-4.2.1-5666.3.mavericks.bottle.2.tar.gz
+==&gt; Caveats
+NOTE:
+This formula provides components that were removed from XCode in the 4.2
+release. There is no reason to install this formula if you are using a
+version of XCode prior to 4.2.
+
+This formula contains compilers built from Apple&#39;s GCC sources, build
+5666.3, available from:
+
+  http://opensource.apple.com/tarballs/gcc
+
+All compilers have a `-4.2` suffix. A GFortran compiler is also included.
+==&gt; Summary
+🍺  /usr/local/Cellar/apple-gcc42/4.2.1-5666.3: 104 files, 75M
+==&gt; Installing cabal-install dependency: ghc
+==&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/ghc-7.6.3.mavericks.bottle.2.tar.gz
+######################################################################## 100.0%
+==&gt; Pouring ghc-7.6.3.mavericks.bottle.2.tar.gz
+==&gt; Caveats
+This brew is for GHC only; you might also be interested in haskell-platform.
+==&gt; Summary
+🍺  /usr/local/Cellar/ghc/7.6.3: 5286 files, 776M
+==&gt; Installing cabal-install
+==&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/cabal-install-1.18.0.2.mavericks.bottle.1.tar.gz
+######################################################################## 100.0%
+==&gt; Pouring cabal-install-1.18.0.2.mavericks.bottle.1.tar.gz
+==&gt; Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==&gt; Summary
+🍺  /usr/local/Cellar/cabal-install/1.18.0.2: 5 files, 18M
+</code></pre></div>
+<p>Next get the ShellCheck source</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace $ git clone https://github.com/koalaman/shellcheck.git
+Cloning into &#39;shellcheck&#39;...
+remote: Reusing existing pack: 1661, done.
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 1669 (delta 1), reused 0 (delta 0)
+Receiving objects: 100% (1669/1669), 628.89 KiB | 416.00 KiB/s, done.
+Resolving deltas: 100% (877/877), done.
+Checking connectivity... done.
+</code></pre></div>
+<p>Try installing ShellCheck</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace $ cd shellcheck/
+mark.crossfield@Galactica-Actual  ~/Documents/workspace/shellcheck $ cabal install
+Config file path source is default config file.
+Config file /Users/mark.crossfield/.cabal/config not found.
+Writing default configuration to /Users/mark.crossfield/.cabal/config
+Warning: The package list for &#39;hackage.haskell.org&#39; does not exist. Run &#39;cabal
+update&#39; to download it.
+Resolving dependencies...
+cabal: Could not resolve dependencies:
+trying: ShellCheck-0.3.2 (user goal)
+next goal: regex-compat (dependency of ShellCheck-0.3.2)
+Dependency tree exhaustively searched.
+</code></pre></div>
+<p>As instructed, update Cabal’s package list.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace/shellcheck $ cabal update
+Downloading the latest package list from hackage.haskell.org
+Note: there is a new version of cabal-install available.
+To upgrade, run: cabal install cabal-install
+</code></pre></div>
+<p>Then update cabal-install itself (probably should have run a brew update before running <code>brew install cabal-install</code>?)</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace/shellcheck $ cabal install cabal-install
+Resolving dependencies...
+Downloading Cabal-1.18.1.3...
+Downloading random-1.0.1.1...
+Downloading stm-2.4.3...
+Configuring random-1.0.1.1...
+Downloading transformers-0.3.0.0...
+Configuring Cabal-1.18.1.3...
+Configuring stm-2.4.3...
+Downloading zlib-0.5.4.1...
+Downloading text-1.1.0.1...
+Configuring transformers-0.3.0.0...
+Configuring zlib-0.5.4.1...
+Configuring text-1.1.0.1...
+Building zlib-0.5.4.1...
+Building stm-2.4.3...
+Building random-1.0.1.1...
+Building text-1.1.0.1...
+Building transformers-0.3.0.0...
+Installed stm-2.4.3
+Installed zlib-0.5.4.1
+Installed random-1.0.1.1
+Installed transformers-0.3.0.0
+Downloading mtl-2.1.3.1...
+Configuring mtl-2.1.3.1...
+Building mtl-2.1.3.1...
+Installed mtl-2.1.3.1
+Building Cabal-1.18.1.3...
+Installed text-1.1.0.1
+Downloading parsec-3.1.5...
+Configuring parsec-3.1.5...
+Building parsec-3.1.5...
+Installed parsec-3.1.5
+Downloading network-2.4.2.2...
+Configuring network-2.4.2.2...
+Building network-2.4.2.2...
+Installed network-2.4.2.2
+Downloading HTTP-4000.2.12...
+Configuring HTTP-4000.2.12...
+Building HTTP-4000.2.12...
+Installed HTTP-4000.2.12
+Installed Cabal-1.18.1.3
+Downloading cabal-install-1.18.0.3...
+Configuring cabal-install-1.18.0.3...
+Building cabal-install-1.18.0.3...
+Installed cabal-install-1.18.0.3
+</code></pre></div>
+<p>Try installing ShellCheck again.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace/shellcheck $ cabal install
+Resolving dependencies...
+Downloading regex-base-0.93.2...
+Downloading syb-0.4.1...
+Configuring regex-base-0.93.2...
+Configuring syb-0.4.1...
+Failed to install syb-0.4.1
+Last 10 lines of the build log ( /Users/mark.crossfield/.cabal/logs/syb-0.4.1.log ):
+Configuring syb-0.4.1...
+setup-Cabal-1.18.1.3-x86_64-osx-ghc-7.6.3:
+/var/folders/mq/lsxl0jld03b8qmprt4jtfkcrkyg7pc/T/26151.o: does not exist
+Building regex-base-0.93.2...
+Installed regex-base-0.93.2
+Downloading regex-posix-0.95.2...
+Configuring regex-posix-0.95.2...
+Building regex-posix-0.95.2...
+Installed regex-posix-0.95.2
+Downloading regex-compat-0.95.1...
+Configuring regex-compat-0.95.1...
+Building regex-compat-0.95.1...
+Installed regex-compat-0.95.1
+cabal: Error: some packages failed to install:
+ShellCheck-0.3.2 depends on syb-0.4.1 which failed to install.
+json-0.7 depends on syb-0.4.1 which failed to install.
+syb-0.4.1 failed during the configure step. The exception was:
+ExitFailure 1
+</code></pre></div>
+<p>The syb dependency failed to install, but it worked when I installed it directly:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace/shellcheck $ cabal install syb
+Resolving dependencies...
+Configuring syb-0.4.1...
+Building syb-0.4.1...
+Installed syb-0.4.1
+</code></pre></div>
+<p>Now try the ShellCheck install again…</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mark.crossfield@Galactica-Actual  ~/Documents/workspace/shellcheck $ cabal install
+Resolving dependencies...
+Downloading json-0.7...
+Configuring json-0.7...
+Building json-0.7...
+Installed json-0.7
+Configuring ShellCheck-0.3.2...
+Building ShellCheck-0.3.2...
+Installed ShellCheck-0.3.2
+</code></pre></div>
+  </div>
+  <div class="colophon">
+    <p>
+      <span id="pub-date">Published on 7 April 2014</span> <span class="separator">&bull;</span> <a href="/2014-04-07-quality-shell-scripting-static-analysis.html">Permalink</a>
+    </p>
+  </div>
+
+
+      </div>
+    </div>
+    <script src="/scripts/responsive.js" type="text/javascript"></script>
+  </body>
+</html>

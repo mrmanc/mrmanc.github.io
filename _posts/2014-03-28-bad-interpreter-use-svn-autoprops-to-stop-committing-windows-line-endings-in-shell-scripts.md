@@ -9,7 +9,6 @@ categories:
 - Shell
 - SVN
 - Subversion
-published: true
 ---
 
 A number of times I’ve had to fix problems with shell scripts which have been edited or created on a Windows system and committed with Windows CRLF line endings, then checked out on to a UNIX system and executed. Perhaps you’ve seen this output somewhere?
