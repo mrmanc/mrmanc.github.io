@@ -171,7 +171,7 @@
       <p>Static analysis has been a widely used tool in development teams for some time now. So when I saw this tweet about <a href="https://github.com/koalaman/shellcheck">ShellCheck</a> I was very interested. I’ve looked for some wisdom about shell scripting best practices in the past, and not found much useful. Plus, <a href="http://programmer.97things.oreilly.com/wiki/index.php/Automate_Your_Coding_Standard">automating your coding standards</a> being one of the <a href="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CC8QFjAA&amp;url=http%3A%2F%2Fwww.amazon.co.uk%2FThings-Every-Programmer-Should-Know%2Fdp%2F0596809484&amp;ei=X3s9U_7YHrGV7Abns4DYDQ&amp;usg=AFQjCNF6I5nBRCYnyAiIdatoviQRoeuWCA&amp;sig2=U6wPuwGjIjF0xNQZXstVTw">97 Things Every Programmer Should Know</a>, perhaps a tool like this is much more valuable.</p>
 
     </div>
-    <p><a href="/2014-04-07-quality-shell-scripting-static-analysis.html">Read more…</a></p>
+    <p><a href="/2014-04-07-quality-shell-scripting-static-analysis.html" class="read-full">Read full post</a></p>
   
 
   
@@ -183,7 +183,7 @@
       <p>A number of times I’ve had to fix problems with shell scripts which have been edited or created on a Windows system and committed with Windows CRLF line endings, then checked out on to a UNIX system and executed. Perhaps you’ve seen this output somewhere?</p>
 
     </div>
-    <p><a href="/2014-03-28-bad-interpreter-use-svn-autoprops-to-stop-committing-windows-line-endings-in-shell-scripts.html">Read more…</a></p>
+    <p><a href="/2014-03-28-bad-interpreter-use-svn-autoprops-to-stop-committing-windows-line-endings-in-shell-scripts.html" class="read-full">Read full post</a></p>
   
 
   
@@ -195,7 +195,7 @@
       <p>I’ve found myself wanting the convenience of some Bash unit testing for the third time, and not wanting to develop yet another set of assertion functions I thought it was about time to find something reusable. I’m looking to do the basic asserts, with some regular expression matching and a sprinkling of <a href="http://c2.com/cgi/wiki?SelfShuntPattern">self shunt</a> (with command interactions intercepted by replacing commands like echo with functions within the scope of the test). I should credit <a href="https://twitter.com/be4zley/">Ross Beazley</a> for starting me off on this approach. This time I’m resisting the temptation to start a new project and thought I’d find something to fork and improve. So here are a few of the projects I found and a bit of analysis.</p>
 
     </div>
-    <p><a href="/2014-03-27-bash-shell-unit-testing.html">Read more…</a></p>
+    <p><a href="/2014-03-27-bash-shell-unit-testing.html" class="read-full">Read full post</a></p>
   
 
   
@@ -207,7 +207,7 @@
       <p>I often feel quite nomadic when using Bash. I’m somewhat a hobo developer, moving from home to home. Recently I’ve been working with OS X at work, and I’ve been on OS X at home for years. Yet still I had some machines where my bash history would drop off quickly, and where aliases I use a lot didn’t exist. When I worked out how to get hostname completion working with ssh I decided it was time to have a dotfiles project.</p>
 
     </div>
-    <p><a href="/2014-03-25-bash-dotfiles-bindle.html">Read more…</a></p>
+    <p><a href="/2014-03-25-bash-dotfiles-bindle.html" class="read-full">Read full post</a></p>
   
 
   
@@ -219,7 +219,7 @@
       <p>Here are some tools I’ve found useful recently to work effectively using OS X behind a proxy at work.</p>
 
     </div>
-    <p><a href="/2014-03-17-using-os-x-at-work-behind-a-proxy.html">Read more…</a></p>
+    <p><a href="/2014-03-17-using-os-x-at-work-behind-a-proxy.html" class="read-full">Read full post</a></p>
   
 
   
@@ -231,7 +231,7 @@
       <p>I’ve made the move from Wordpress to <a href="http://jekyllrb.com/">Jekyll</a>, and Wordpress.com for hosting, to <a href="http://pages.github.com/">Github Pages</a> which has Jekyll support built in. Combined with Github Pages (which is an awesome way to host HTML sites for free), this is a very powerful way to get an easy to manage blog with complete control and no sales pitch for extras.</p>
 
     </div>
-    <p><a href="/2014-03-16-free-hosting-with-github-pages.html">Read more…</a></p>
+    <p><a href="/2014-03-16-free-hosting-with-github-pages.html" class="read-full">Read full post</a></p>
   
 
   
@@ -243,7 +243,7 @@
       <p>We’ve been doing quite a bit of work improving our Go environment recently, and correcting one or two continuous integration anti patterns we’d introduced. I wanted to find a way to see the effect of these changes, and it occurred to me that it might be possible to use D3.js to build the view. I have had good use cases for graph diagrams in the past but got bored looking for a good way to draw them programatically. I’d even lazily fallen back on the <a href="http://console.neo4j.org/">Neo4J console</a> to program the graph and then visualise it (and amusingly I now see that that page is using D3.js behind the scenes).</p>
 
     </div>
-    <p><a href="/2014-02-16-thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html">Read more…</a></p>
+    <p><a href="/2014-02-16-thats-no-moon-visualising-go-delivery-pipelines-using-d3-js.html" class="read-full">Read full post</a></p>
   
 
   
@@ -255,7 +255,7 @@
       <p>A colleague asked us recently to make sure we turn our monitors off overnight to save power. That’s all very well, but what should we do about our dashboard? We purposefully disable power saving to make sure that the display doesn’t turn off during the day, and since we never actually use it there would be nothing to wake it up! It turns out you can easily script this using Task Scheduler, which comes with Windows. You will need to download a tool called <a href="http://www.nirsoft.net/utils/nircmd.html">NirCmd</a>, which allows you to control your monitor from the command line (amongst many other things). You already have a command called powercfg to configure the other Power Saving options from the command line.</p>
 
     </div>
-    <p><a href="/2013-05-22-saving-the-world-one-dashboard-at-a-time-using-task-scheduler-and-nircmd-and-powercfg.html">Read more…</a></p>
+    <p><a href="/2013-05-22-saving-the-world-one-dashboard-at-a-time-using-task-scheduler-and-nircmd-and-powercfg.html" class="read-full">Read full post</a></p>
   
 
   
@@ -268,7 +268,7 @@
 I spend literally hours a week just trawling logs, often wanting to visualise what I’m seeing. Yes, I could faff with Splunk or something else expensive (yes, I know there is a free version), but sometimes I just want to know what a column of response times looks like.</p>
 
     </div>
-    <p><a href="/2012-06-26-ascii-distribution-histogram-pivot-your-standard-out.html">Read more…</a></p>
+    <p><a href="/2012-06-26-ascii-distribution-histogram-pivot-your-standard-out.html" class="read-full">Read full post</a></p>
   
 
   
@@ -280,7 +280,7 @@ I spend literally hours a week just trawling logs, often wanting to visualise wh
       <p>Okay, so my <a href="http://markisadeveloper.wordpress.com/2012/05/10/meet-graphite/">previous post</a> is a long overdue summary of how we are visualising application metrics using Graphite. We are writing custom Logster parsers which scan our log files and push interesting things into Graphite. This means that to get a new metric into Graphite we need to add it to our log files (unless it already exists), and adapt or create a python Logster parser to understand whatever we’ve logged. This parser then needs to be deployed to our server running logster and a graph built. The biggest blocker we’ve seen with this approach is the necessity for the engineer to understand how to write Python, where to find and test the Logster parsers, and how to deploy the parser to the Logster server. Personally, this means either doing the work myself or explaining the peculiarities of Python white space handling to yet another person. There must be a better way.</p>
 
     </div>
-    <p><a href="/2012-06-25-simply-measure-anything-with-metriclogster.html">Read more…</a></p>
+    <p><a href="/2012-06-25-simply-measure-anything-with-metriclogster.html" class="read-full">Read full post</a></p>
   
 
 

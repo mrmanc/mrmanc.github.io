@@ -292,3 +292,9 @@ a:hover {
   font-size: 0.95em;
   color: #777;
 }
+
+a.read-full {
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px dashed #8085C1;
+}

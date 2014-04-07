@@ -14,7 +14,7 @@ paginate: 10
     <div class="post">
       {{ post.excerpt }}
     </div>
-    <p><a href="{{ post.url }}">Read more…</a></p>
+    <p><a href="{{ post.url }}" class="read-full">Read full post</a></p>
   {% endunless %}
 {% endfor %}
 {% if paginator.total_pages > 1 %}
