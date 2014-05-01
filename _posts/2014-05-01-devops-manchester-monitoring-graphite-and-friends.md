@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Graphite and Friends
+title: DevOps Manchester—Graphite and Friends
 cover: graphite.jpg
 categories:
 - devops
