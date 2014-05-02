@@ -41,6 +41,7 @@ We had the second [DevOps Manchester](http://www.devopsmanchester.co.uk/post/820
 * [logster: Parse log files, generate metrics for Graphite and Ganglia](https://github.com/etsy/logster)
 * [Riemann: A network event stream processing system, in Clojure.](https://github.com/jdmaturen/reimann)
 * [Metrics: Capturing JVM- and application-level metrics.](http://metrics.codahale.com/)
+* [Grafana - Graphite and InfluxDB Dashboard and graph composer](http://grafana.org/)
 * [Tasseo: Live dashboard for Graphite](https://github.com/obfuscurity/tasseo)
 * [Dashing: The exceptionally handsome dashboard framework.](http://shopify.github.io/dashing/)
 * [Etsy Kale](http://codeascraft.com/2013/06/11/introducing-kale/)
