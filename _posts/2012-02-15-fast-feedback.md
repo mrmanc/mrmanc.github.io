@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fast Feedback
+comments: true
 categories:
 - Agile
 - Development

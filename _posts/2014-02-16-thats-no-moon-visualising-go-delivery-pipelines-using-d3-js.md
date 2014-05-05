@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'That’s no moon: Visualising Go Delivery Pipelines Using D3.js'
+comments: true
 categories:
 - Continuous Delivery
 - Development

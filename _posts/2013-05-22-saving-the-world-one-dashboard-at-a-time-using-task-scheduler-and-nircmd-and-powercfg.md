@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Saving the world, one dashboard at a time
+comments: true
 cover: dashing.jpg
 date: 2013-05-22 13:05:46+00:00
 ---

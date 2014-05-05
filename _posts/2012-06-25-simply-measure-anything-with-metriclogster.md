@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Simply Measure Anything with MetricLogster
+comments: true
 tags:
 - graphite
 - Logs

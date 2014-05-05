@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Are your pairs rotating enough? Generate a pairing heat map
+comments: true
 categories:
 - Agile
 - Development

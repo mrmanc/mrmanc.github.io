@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Take your scripts with you
+comments: true
 categories:
 - Bash
 - OS X

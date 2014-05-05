@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Automating Vuze with Dropbox (in OS X)
+comments: true
 categories:
 - Life Hacks
 tags:

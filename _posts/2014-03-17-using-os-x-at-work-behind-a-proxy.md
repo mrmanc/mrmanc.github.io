@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using OS X at work behind a proxy
+comments: true
 categories:
 - posts
 - os x

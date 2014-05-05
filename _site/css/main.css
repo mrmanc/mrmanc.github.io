@@ -305,8 +305,6 @@ a.read-full {
 /*
 /*****************************************************************************/
 
-#add-comment {
-  font-size: 150%;
-  padding-top: .5em;
-  padding-bottom: .5em;
+#disqus-comments {
+  padding-right: 1em;
 }

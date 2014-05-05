@@ -2,6 +2,7 @@
 layout: post
 title: DevOps Manchester—Graphite and Friends
 cover: graphite.jpg
+comments: true
 categories:
 - devops
 - manchester

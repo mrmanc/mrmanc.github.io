@@ -2,6 +2,7 @@
 layout: post
 title: Bad Interpreter—SVN autoprops save the day
 cover: bad-interpreter.jpg
+comments: true
 categories:
 - Bash
 - UNIX

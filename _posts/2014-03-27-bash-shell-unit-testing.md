@@ -3,6 +3,7 @@ author: mark
 layout: post
 title: Test Driven Development in Bash
 cover: tests-passed.png
+comments: true
 categories:
 - Bash
 - UNIX

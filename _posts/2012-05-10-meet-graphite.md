@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Meet Graphite
+comments: true
 categories:
 - Agile
 - Development

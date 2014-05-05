@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ascii Distribution Histogram—pivot your standard out
+comments: true
 categories:
 - Development
 - Visualisation

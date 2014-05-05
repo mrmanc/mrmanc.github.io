@@ -181,7 +181,7 @@
       <p>Okay, so my <a href="http://markisadeveloper.wordpress.com/2012/05/10/meet-graphite/">previous post</a> is a long overdue summary of how we are visualising application metrics using Graphite. We are writing custom Logster parsers which scan our log files and push interesting things into Graphite. This means that to get a new metric into Graphite we need to add it to our log files (unless it already exists), and adapt or create a python Logster parser to understand whatever we’ve logged. This parser then needs to be deployed to our server running logster and a graph built. The biggest blocker we’ve seen with this approach is the necessity for the engineer to understand how to write Python, where to find and test the Logster parsers, and how to deploy the parser to the Logster server. Personally, this means either doing the work myself or explaining the peculiarities of Python white space handling to yet another person. There must be a better way.</p>
 
     </div>
-    <p><a href="/2012-06-25-simply-measure-anything-with-metriclogster.html" class="read-full">Read full post</a></p>
+    <p><a href="/2012-06-25-simply-measure-anything-with-metriclogster.html#disqus_thread" class="read-full">Read full post</a></p>
   
 
   
@@ -193,7 +193,7 @@
       <p>Last year i was fascinated by a <a href="http://velocityconf.com/velocity2011/public/schedule/detail/17776">presentation</a> <a href="http://www.slideshare.net/mikebrittain/metrics-driven-engineering-at-etsy">[slides]</a> by Etsy about their approach of metrics driven engineering - see their blog post - <a href="http://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/">Measure Anything, Measure Everything</a>. They started with some questions: how many of us had access to our production logs (a reassuringly high amount), and how many of us could tell them how many hits our application was getting right now / how many hits it got this time last year.</p>
 
     </div>
-    <p><a href="/2012-05-10-meet-graphite.html" class="read-full">Read full post</a></p>
+    <p><a href="/2012-05-10-meet-graphite.html#disqus_thread" class="read-full">Read full post</a></p>
   
 
   
@@ -205,7 +205,7 @@
       <p>My relationship with Ant has had its ups and downs. I hate writing a build file in a language that I’m unfamiliar with, and finding that the language seems designed to encourage and hideous result. Recently however I felt I achieved something, successfully reducing the duration of our teams pre check in task task from three and a half minutes to only 24 seconds.</p>
 
     </div>
-    <p><a href="/2012-02-15-fast-feedback.html" class="read-full">Read full post</a></p>
+    <p><a href="/2012-02-15-fast-feedback.html#disqus_thread" class="read-full">Read full post</a></p>
   
 
   
@@ -217,7 +217,7 @@
       <p>Our team have often expressed in retrospectives that they feel they should rotate more often. In fact, the irregular rotation is often a theme when trying to get to the root cause of bad design decisions and lacking code architecture. In the spirit of self-organisation we have sought not to impose pair rotation on the team, instead encouraging them to retrospect on this themselves and come up with their own scheme. The only limitation we’ve given is that one of the developers should remain on the story in each swap, so that some context is retained.</p>
 
     </div>
-    <p><a href="/2011-07-31-are-your-pairs-rotating-enough-generate-a-pairing-heat-map.html" class="read-full">Read full post</a></p>
+    <p><a href="/2011-07-31-are-your-pairs-rotating-enough-generate-a-pairing-heat-map.html#disqus_thread" class="read-full">Read full post</a></p>
   
 
   
@@ -229,7 +229,7 @@
       <p>This is a simple one, but I’m quite pleased with it, and I don’t think it jumps out as an obvious tweak. Vuze (formally Azureus) is a great BitTorrent client, which has some great features like transcoding and subscriptions. I’ve previously had it configured to download everything from an RSS feed, which was built from my bookmarks in Mininova. But they don’t have so many torrents these days, and I wanted a set up which wasn’t dependent on one site.</p>
 
     </div>
-    <p><a href="/2011-07-30-automating-vuze-with-dropbox-in-os-x.html" class="read-full">Read full post</a></p>
+    <p><a href="/2011-07-30-automating-vuze-with-dropbox-in-os-x.html#disqus_thread" class="read-full">Read full post</a></p>
   
 
   
@@ -241,7 +241,7 @@
       <p>The obligatory first post. I’ve got a few ideas in the pipeline for future posts, but with a busy June it may be some time before they materialise. I’m attending Velocity 2011 in San Francisco, then heading straight off to Glastonbury where I volunteer as a steward with Oxfam. With plenty of travel time I’m sure I’ll manage to post something soon.</p>
 
     </div>
-    <p><a href="/2011-06-05-hello.html" class="read-full">Read full post</a></p>
+    <p><a href="/2011-06-05-hello.html#disqus_thread" class="read-full">Read full post</a></p>
   
 
 
@@ -269,5 +269,17 @@
       </div>
     </div>
     <script src="/scripts/responsive.js" type="text/javascript"></script>
+        <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'markcrossfield'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
   </body>
 </html>
