@@ -12,6 +12,8 @@ categories:
 ---
 We had the second [DevOps Manchester](http://www.devopsmanchester.co.uk/post/82020992924/announcing-our-first-two-speakers-on-monitoring) meet up on Tuesday 29th May at the new TechHub Manchester office, where the topic was Monitoring. Along with an excellent talk from [Steve Elliot](www.tegud.net) of Late Rooms on ELK Wrestling (where [ELK](http://www.elasticsearch.org/overview/) represents Elasticsearch, Logstash and Kibana), I presented Graphite and Friends. Here are the slides (and below are the links from the presentation since they aren’t clickable in the embedded version).
 
+Update: I’m blown away by how popular these slides have been, so I will be fleshing them out with a full article at some point. That way you won’t have to guess the meanings of the points in the slides! Please check back soon.
+
 <script async class="speakerdeck-embed" data-id="3d57da60b222013190c962aacf32eac0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 * [Auto Trader Careers](http://careers.autotrader.co.uk/)
