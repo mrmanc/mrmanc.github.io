@@ -11,7 +11,7 @@ categories:
 - continuous-integration
 - autotrader
 ---
-I presented about Continuous Delivery activities at Auto Trader at last night’s [DevOps Manchester](http://www.devopsmanchester.co.uk/post/98877426391/devops-manchester-tues-21st-oct-2014) meet up on Tuesday 22nd October at Auto Trader’s new First St offices in Manchester, alongside Jim Davies who talked about Moneysupermarket’s copy/paste datacenter. Here are my the slides.
+I presented about Continuous Delivery activities at Auto Trader at last night’s [DevOps Manchester](http://www.devopsmanchester.co.uk/post/98877426391/devops-manchester-tues-21st-oct-2014) meet up on Tuesday 22nd October at Auto Trader’s new First St offices in Manchester, alongside Jim Davies who talked about Moneysupermarket’s copy/paste datacenter. Here are the slides.
 
 <script async class="speakerdeck-embed" data-id="518b7d103c1901324b660ed537686a9d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
