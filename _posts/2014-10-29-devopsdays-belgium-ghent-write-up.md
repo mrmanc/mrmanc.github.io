@@ -48,3 +48,5 @@ I also took quite a bit away from Brian Troutwine’s talk about “[Automation 
 
 <blockquote class="twitter-tweet" lang="en"><p>I&#39;ve put my <a href="https://twitter.com/hashtag/devopsdays?src=hash">#devopsdays</a> slides online! <a href="http://t.co/rkUp7rU5ZC">http://t.co/rkUp7rU5ZC</a> Thanks everyone for for listening; it was a delight! &lt;3</p>&mdash; Brian L. Troutwine (@bltroutwine) <a href="https://twitter.com/bltroutwine/status/527089083169140736">October 28, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I think one of my favourite things though has to be introducing a [BuzzFeed employee](https://twitter.com/damianigreg) to [What if programmers used BuzzFeed-style commit messages](https://storify.com/anirvan/buzzfeed-style-commit-messages).
