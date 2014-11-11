@@ -308,3 +308,13 @@ a.read-full {
 #disqus-comments {
   padding-right: 1em;
 }
+
+
+.image-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.image-right figcaption {
+  text-align: center;
+  font-weight: bold;
+}
