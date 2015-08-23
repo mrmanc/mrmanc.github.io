@@ -15,7 +15,7 @@ categories:
 - Shell
 ---
 
-My latest spare time project has been writing a general purpose command line heat map tool designed to visualise the distribution of streams of decimal numbers (not necessarily integers) representing something like latency, duration or size. I’ve called it spectro as it’s output resembles a [spectrogram](https://en.wikipedia.org/wiki/Spectrogram).
+My latest spare time project has been writing a general purpose command line heat map tool designed to visualise the distribution of streams of decimal numbers (not necessarily integers) representing something like latency, duration or size. I’ve called it [spectro](https://github.com/mrmanc/spectro) as it’s output resembles a [spectrogram](https://en.wikipedia.org/wiki/Spectrogram).
 
 It was inspired by [this Sysdig tweet](https://twitter.com/sysdig/status/618826906310324224) for a monitoring tool with built in command line visualisation, and follows on from my [distribution Awk script](https://github.com/mrmanc/log-ninja#distribution) which displays an actual histogram (although it also has some real-time functionality).
 
