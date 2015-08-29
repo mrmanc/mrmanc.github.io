@@ -14,7 +14,7 @@ categories:
 - UNIX
 - Shell
 ---
-
+<iframe src="https://ghbtns.com/github-btn.html?user=mrmanc&repo=spectro&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 My latest spare time project has been writing a general purpose command line heat map tool designed to visualise the distribution of streams of decimal numbers (not necessarily integers) representing something like latency, duration or size. I’ve called it [spectro](https://github.com/mrmanc/spectro) as it’s output resembles a [spectrogram](https://en.wikipedia.org/wiki/Spectrogram).
 
 It was inspired by [this Sysdig tweet](https://twitter.com/sysdig/status/618826906310324224) for a monitoring tool with built in command line visualisation, and follows on from my [distribution Awk script](https://github.com/mrmanc/log-ninja#distribution) which displays an actual histogram (although it also has some real-time functionality).
@@ -97,9 +97,17 @@ I was also keep that the charts would adapt to changes in input, so that it is n
 
 I pulled the log replay functionality out into a separate command named `pacemaker` as I can see myself using it again in the future, and also to follow the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and the second of the [Tenets of the UNIX Philosophy](http://www.ru.j-npcs.org/usoft/WWW/LJ/Articles/unixtenets.html): ‘Make each program do one thing well’. Communication between pacemaker and spectro is via extra plain text lines to keep things readable, and both are designed to work as filters in a pipeline (tenet nine).
 
+## Summary
+
+I think I would recommend using Go for a similar task in the future, simply for the cross platform distribution mechanism, lack of dependency issues and freedom from packaging pain.
+
+I wouldn’t recommend it without further experimenting for large scale projects, or where another language had some distinct advantage in the libraries available.
+
 ## Go get it
 
 You can find out more, including install instructions at [https://github.com/mrmanc/spectro](https://github.com/mrmanc/spectro).
+
+<iframe src="https://ghbtns.com/github-btn.html?user=mrmanc&repo=spectro&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 
 ## Future improvements
 
