@@ -24,7 +24,7 @@ Secondly, as many developers will attest, the longer you spend staring at Ant ou
 
 Finally, time is money! Three minutes ten times a day across a large team can amount to hundreds of pounds worth of wasted time.
 
-So what does our target do? Well, in it’s fifth incarnation it runs a cut down set of unit tests, and checks we haven’t introduced any measurable code quality issues using PMD and Checkstyle. In the past it has done anything we could think of:
+So what does our target do? Well, in its fifth incarnation it runs a cut down set of unit tests, and checks we haven’t introduced any measurable code quality issues using PMD and Checkstyle. In the past it has done anything we could think of:
 
 * run our unit tests
 * run our integration tests
@@ -34,7 +34,7 @@ So what does our target do? Well, in it’s fifth incarnation it runs a cut down
 * instrumented our classes using Cobertura and guarded against drops in test coverage
 * PMD and Checkstyle checks as mentioned above
 
-It has evolved over time depending on how frustrated we were with it’s length, and what we were working on at the time (hence what the risks were). At our lowest, we were spending around fifteen minutes running tests before checking in.
+It has evolved over time depending on how frustrated we were with its length, and what we were working on at the time (hence what the risks were). At our lowest, we were spending around fifteen minutes running tests before checking in.
 
 It was suggested to us that we should be able to hold our breath whilst our tests run, and I’m glad to say that even the smokers of the team should be able to do that for 24 seconds.
 

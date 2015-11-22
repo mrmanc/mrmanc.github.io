@@ -108,7 +108,7 @@ Better than that would be something graphical. Using my handy distribution scrip
 
 That’s pretty right? You remember the [normal distribution](http://en.wikipedia.org/wiki/Normal_distribution) don’t you?
 
-It’s even nice enough to work out that you only had 24 records, and so curtailed it’s default of a chart with a height of 55 rows. If you supply more than 55 records it will work out the value of each bar to distribute your records over 55 lines. If you want to reduce the number of lines, or supply a higher maximum you can pass in a max_lines variable. You can also supply a max value to zoom in on the beginning of the chart.
+It’s even nice enough to work out that you only had 24 records, and so curtailed its default of a chart with a height of 55 rows. If you supply more than 55 records it will work out the value of each bar to distribute your records over 55 lines. If you want to reduce the number of lines, or supply a higher maximum you can pass in a max_lines variable. You can also supply a max value to zoom in on the beginning of the chart.
 
 
 

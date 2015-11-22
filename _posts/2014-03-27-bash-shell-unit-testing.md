@@ -59,7 +59,7 @@ Whilst I like the summary that this tool gives you, I don’t really like the ou
 101 stars on Google Code.
 Last updated May 2011
 
-This one looks okay. It roughly equates JUnit and works on a number of platforms (OS X and Cygwin included) and a number of shells (sh, bash, zsh etc). It appears to have been developed by one person and hasn’t been developed since May 2011, but I’m guessing that’s because it’s feature complete for it’s intended purpose.
+This one looks okay. It roughly equates JUnit and works on a number of platforms (OS X and Cygwin included) and a number of shells (sh, bash, zsh etc). It appears to have been developed by one person and hasn’t been developed since May 2011, but I’m guessing that’s because it’s feature complete for its intended purpose.
 
 The following assertions are supported. That just leaves me missing regex support.
 
