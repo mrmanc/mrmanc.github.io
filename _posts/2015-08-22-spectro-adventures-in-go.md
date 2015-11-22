@@ -15,7 +15,7 @@ categories:
 - Shell
 ---
 <iframe src="https://ghbtns.com/github-btn.html?user=mrmanc&repo=spectro&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-My latest spare time project has been writing a general purpose command line heat map tool designed to visualise the distribution of streams of decimal numbers (not necessarily integers) representing something like latency, duration or size. I’ve called it [spectro](https://github.com/mrmanc/spectro) as it’s output resembles a [spectrogram](https://en.wikipedia.org/wiki/Spectrogram).
+My latest spare time project has been writing a general purpose command line heat map tool designed to visualise the distribution of streams of decimal numbers (not necessarily integers) representing something like latency, duration or size. I’ve called it [spectro](https://github.com/mrmanc/spectro) as its output resembles a [spectrogram](https://en.wikipedia.org/wiki/Spectrogram).
 
 It was inspired by [this Sysdig tweet](https://twitter.com/sysdig/status/618826906310324224) for a monitoring tool with built in command line visualisation, and follows on from my [distribution Awk script](https://github.com/mrmanc/log-ninja#distribution) which displays an actual histogram (although it also has some real-time functionality).
 
@@ -67,7 +67,7 @@ will display something a bit like this in your terminal :
 
 ![dtrace spectrograph](http://markcrossfield.co.uk/images/spectro/dtrace.gif)
 
-But it really comes into it’s own if you have historic logs with a formatted time in the line. Here you can use the pacemaker command to indicate to spectro how to sample the data. The pacemaker command will add extra lines to the streamed output as a signal to the spectro command. Pacemaker will look for a time matching something like this: `10:14:52`. It’s tolerant of times out of order, but this will result in repeated periods. You can leave the time text in the output, so long as the number you wish to visualise is the last thing in the line.
+But it really comes into its own if you have historic logs with a formatted time in the line. Here you can use the pacemaker command to indicate to spectro how to sample the data. The pacemaker command will add extra lines to the streamed output as a signal to the spectro command. Pacemaker will look for a time matching something like this: `10:14:52`. It’s tolerant of times out of order, but this will result in repeated periods. You can leave the time text in the output, so long as the number you wish to visualise is the last thing in the line.
 
 You can run something like `cat sample.log | pacemaker | spectro` on the provided `sample.log` which looks like this:
 
@@ -91,9 +91,9 @@ I appreciated the line by line output of [sysdig](https://sysdig.com/aws-storage
 
 I decided early on I wanted to find a decent gradient of ANSI colours which covered the visible spectrum. That took a fair time to work out, since there is a lot of bad information out there about ANSI colours, and no list of ‘rainbow’ colours came forward in any search I did. And the rainbow scheme is very attractive when testing with a normal distribution. Frustratingly though, it turned out that lots of colours is actually very difficult to read with a less organised distribution, so I limited it to blue through red.
 
-I was keen to allow data to be streamed in in real time, or replayed via an existing log file. While I’m not proud of the hacky time code (which just watches for times like `15:30:05` in the output) it is quite effective at processing an existing log, which can be done ASAP or with simulated pauses.
+I was keen to allow data to be streamed in real time, or replayed via an existing log file. While I’m not proud of the hacky time code (which just watches for times like `15:30:05` in the output) it is quite effective at processing an existing log, which can be done ASAP or with simulated pauses.
 
-I was also keep that the charts would adapt to changes in input, so that it is not necessary for the user to provide configuration flags. If the range of inputs changes, the scale will be replotted (an a message printed). Similarly, if the number of points in each bucket changes the magnitude scale will adapt. It is however possible for the user to start these two values at appropriate levels to prevent constant changes.
+I was also keen that the charts would adapt to changes in input, so that it is not necessary for the user to provide configuration flags. If the range of inputs changes, the scale will be replotted (an a message printed). Similarly, if the number of points in each bucket changes the magnitude scale will adapt. It is however possible for the user to start these two values at appropriate levels to prevent constant changes.
 
 I pulled the log replay functionality out into a separate command named `pacemaker` as I can see myself using it again in the future, and also to follow the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and the second of the [Tenets of the UNIX Philosophy](http://www.ru.j-npcs.org/usoft/WWW/LJ/Articles/unixtenets.html): ‘Make each program do one thing well’. Communication between pacemaker and spectro is via extra plain text lines to keep things readable, and both are designed to work as filters in a pipeline (tenet nine).
 
@@ -111,7 +111,7 @@ You can find out more, including install instructions at [https://github.com/mrm
 
 ## Future improvements
 
-* Potentially split the summarisation (histogram) functionality from the rendering, since it is useful on it’s own and can allow you to use much less space to store a replay of a period in plain text
+* Potentially split the summarisation (histogram) functionality from the rendering, since it is useful on its own and can allow you to use much less space to store a replay of a period in plain text
 * Normalise the amplitude using the time since last sample to smooth out results when processing is slow
 * Try using a static logarithmic scale for the amplitude scaling to provide consistency and better resolution on small amplitudes
 * Allow the user to switch scales dynamically when the command is running
