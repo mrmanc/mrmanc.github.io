@@ -19,7 +19,7 @@ I presented about Automated Deployment at Auto Trader for a [DevOps Edinburgh](h
 * Auto Trader’s deployment history
 * Our project which delivered control of deployment to developers
 * What we learned from the experience
-* Our in progress product which will be the future of deployment at Auto Trader
+* Our in-progress product which will be the future of deployment at Auto Trader
 
 <script async class="speakerdeck-embed" data-id="3dcb8f4dbc1d4aef833a2972b5217f11" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
