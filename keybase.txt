@@ -1,0 +1,77 @@
+---
+---
+==================================================================
+https://keybase.io/markcrossfield
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://markcrossfield.co.uk
+  * I am markcrossfield (https://keybase.io/markcrossfield) on keybase.
+  * I have a public key with fingerprint 8A9C 3D36 48F3 AA63 810E  AE66 1726 05F8 C376 C1E3
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120c75257aa743baa96fde590900eff0430c6b3d816e7a8e9fd1507f1ed4f4206690a",
+            "fingerprint": "8a9c3d3648f3aa63810eae66172605f8c376c1e3",
+            "host": "keybase.io",
+            "key_id": "172605f8c376c1e3",
+            "kid": "010141510a823a67b7a61ffc4be2b71c1d0e2481386b9dd91e3c4cc65356fed397960a",
+            "uid": "86c35730acf85c32ee6f81a9038f3419",
+            "username": "markcrossfield"
+        },
+        "service": {
+            "hostname": "markcrossfield.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1458522936,
+    "expire_in": 157680000,
+    "prev": "69a3a3f2b5590246ee66fb394ee7454b7d2e40644c54cf60219dba77b05112bc",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMN1AnicbZJ9UBRlHMe5kONdawbDIMB2NIrg2mdfnt09KhJhLLQ8FaGRs+PZ3Wdh
+hbs97gVRBlJTZ8AKRqpJlAQtXgZtbECHHJlCjnFGxSvG0cGpMHFMMMcGNTopaI/J
+/3z+eeZ5nu/383x/v+fxxYaGRBniXwz7e7ByYNxwYeArb0jBvdV8NSFq8jbCXE2U
+4fkJl8vY7bGVqTJhJkhAkRLHUiyHEMfQIkICVGTMCqRAklhRSIYmJSjSMg8g5hCP
+BUUGLMkpAMuMwlAkhAKJiHRCUR0l2OV0qQ6PjuWRINEyDRleoRGCNA9IjDCEgKMg
+ySq8RHNQApjWjaWaO+jQw4nIjU2qpu/pC9t8vCfoH+cmAQNYQCKeohHkRA5BoCgS
+I2JK5IAEZBJTDA9oHoqCLAu6V2IkCbI0CxUs0wInwPnc3nkcDyWa5WgSSQrPSjSF
+MVR4gASS1gtggBAUurHLgexYV9uRq0xyaW63ourNJGrSCf2sUpVwsL3Bep6oM0ma
+yVumk5wuzaNJWrmuKPV4nOYgwLPNGXRsxaLtf5ZNVB2y3lTdUIldblVzEGagKyWP
+GoQDhuVZihJomE7gKqfqwjY1qGA5yJP6CF6DK3UkFBCNaIUSWf1RKQbqpUFFpAUG
+Y45hGZGTKcyQkGEklpEUSFJAkEXEcSLJAkCJEhGsrsKhEWZej4lKdKRbLXEgj9eF
+iZqzA9YFIYaoEGPYU8HPFhIV+fTjL+jau2gu92xseV1O2w0jU79yS88PRxuzZ3a0
+vGkKNHjXLTi/NmvfoZSG3ReXd00cfmcDWBGfZb31wEZn7p79ZjR6Z6Ak+fs0Y0uJ
+KbxZ+dH+SJ1LvWOhPqw9vfmtVuepwCkle6m/N9DW/uem9sWpOGPI+HLdL9bc8pf6
+EgcH8pMmZuy7Io4cWFGRIJq7hEqfpQhUdL23sb8z99gzPVfK8z4ydNu7isJ73If3
+nHjDVR3dmZSUeP3C9gN/GfILNixdDXb+YRtufl0buT+LxpKHOvwnJg339wbON37m
+HO2+3BsbbRn5ebpN2/X+wgLfq4bM8ZS47M2JaevHHrxNTaf4Eop+shx9mGUIDf1g
+X0vG/jvpDUOo72PqtGqEV7fWdatwUWZkRgdx5JUexEZ/mVz1RXHx8frOOnvzwdLJ
+lPqr5uyF18ZroZ9obYwbtJ7sjLhbbd0S+k+O15NXX3ipfHLZyrrlSTEvpH5Ssdbi
+v5QTLff/WuUvPmPom55a7HPdyxr7NnBue5U/Ie5gYdTJ2R21n4OwTevD9m9ccqXp
+6yXx7xoLux6O3G1Mn57UiFxPXn7tTKxxzXNNz54ZjExqvNk+nhhz/bJx9LVjNXOW
+7cfTjKs6bvfeHs69iWKszy+bCl8z+ejfghtjbTP9HVPFty6mNCX+juacEZxmqm86
+RJ0jLVXEb58OT7Suu+b7zrNq8D8h4b0o
+=mI/T
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/markcrossfield
+
+==================================================================
