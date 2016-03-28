@@ -3,7 +3,7 @@ description: Writings about software development, Devops and technology
 name: Mark Crossfield
 author: mrmanc
 url: http://markcrossfield.co.uk/
-highlighter: pygments
+highlighter: rouge
 paginate: 10
 permalink: /:year-:month-:day-:title.html
 twitter:
