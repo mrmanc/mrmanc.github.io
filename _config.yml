@@ -1,5 +1,17 @@
+title: Mark Crossfield
+description: Writings about software development, Devops and technology
 name: Mark Crossfield
-markdown: redcarpet
-pygments: true
+author: mrmanc
+url: http://markcrossfield.co.uk/
+highlighter: pygments
 paginate: 10
 permalink: /:year-:month-:day-:title.html
+twitter:
+  username: mrmanc
+logo: /images/logo.png
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
