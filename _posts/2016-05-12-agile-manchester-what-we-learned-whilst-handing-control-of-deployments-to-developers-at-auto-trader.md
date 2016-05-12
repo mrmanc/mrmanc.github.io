@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DevOps Edinburgh—How We Put Developers In Control of Deployments at Auto Trader
+title: Agile Manchester—What we learned whilst handing control of deployments to developers at Auto Trader
 cover: autotrader.png
 comments: true
 categories:
