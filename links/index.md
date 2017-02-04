@@ -10,6 +10,7 @@ meta:
   _wp_page_template: default
   sharing_disabled: '1'
 author:
+image: bookshelf.jpg
 ---
 
 # Reading for every junior developer
