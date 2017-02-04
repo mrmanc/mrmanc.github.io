@@ -10,6 +10,7 @@ meta:
   _wp_page_template: default
   sharing_disabled: '1'
 author:
+image: markcrossfield.jpg
 ---
 
 I’m Mark, a developer/engineer working at [Auto Trader](http://www.autotrader.co.uk/) (why not [join us?](http://careers.autotrader.co.uk/)) where I’ve worked on a large CMS project, [deployment automation]({{ site.url }}{{ site.baseurl }}2016-05-12-agile-manchester-what-we-learned-whilst-handing-control-of-deployments-to-developers-at-auto-trader.html) and more recently on building the service that will be responsible for releasing all infrastructure and application changes to our cloud environment. I’ve learnt a lot from others in my current role and from other people’s blogs, and want to pay it back by sharing here. I’m quite interested in the theoretical side of software and the working environment, especially areas such as Kanban, Scrum, TDD and BDD.
