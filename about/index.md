@@ -18,4 +18,4 @@ I’m also becoming more and more interested in software architecture and code d
 
 In my free time I’m a keen film goer, love to read and have a fairly varied taste in music. I [volunteer as a Festival steward with Oxfam](http://www.oxfam.org.uk/stewarding), working at large festivals over the summer such as Glastonbury, Latitude and Leeds Festival.
 
-You can contact me [by email](mailto:blog@markcrossfield.co.uk) or connect on [Linkedin](http://uk.linkedin.com/in/markcrossfield). You can also follow me on [Twitter](http://twitter.com/mrmanc).
+You can contact me [by email](mailto:blog@markcrossfield.co.uk) or connect on [Linkedin](http://uk.linkedin.com/in/markcrossfield). You can also follow me on [Twitter](http://twitter.com/mrmanc). You can also read my [Developer Story on Stack Overflow](http://stackoverflow.com/story/markcrossfield).
