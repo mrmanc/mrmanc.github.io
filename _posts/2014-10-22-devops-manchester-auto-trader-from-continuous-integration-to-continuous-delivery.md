@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DevOps Manchester—Auto Trader… From Continuous Integration to Continuous Delivery
-cover: autotrader.png
+image: autotrader.png
 comments: true
 categories:
 - devops

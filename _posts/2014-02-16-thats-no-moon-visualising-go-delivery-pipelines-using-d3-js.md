@@ -6,7 +6,7 @@ categories:
 - Continuous Delivery
 - Development
 - Visualisation
-cover: graph.png
+image: graph.png
 date: 2014-02-16 01:39:59+00:00
 ---
 

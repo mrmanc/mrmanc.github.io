@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DevOps Edinburgh—How We Put Developers In Control of Deployments at Auto Trader
-cover: autotrader.png
+image: autotrader.png
 comments: true
 categories:
 - devops

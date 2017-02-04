@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DevOpsDays Ghent, Belgium 2014
-cover: ghent-market-hall.jpg
+image: ghent-market-hall.jpg
 comments: true
 categories:
 - devops

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Static Analysis of Shell Scripts
-cover: shellcheck.png
+image: shellcheck.png
 comments: true
 categories:
 - shell

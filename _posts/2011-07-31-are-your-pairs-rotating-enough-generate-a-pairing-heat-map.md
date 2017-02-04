@@ -11,7 +11,7 @@ tags:
 - Pairing
 - Rotation
 - XP
-cover: heatmap.jpg
+image: heatmap.jpg
 date: 2011-07-31 21:50:29+00:00
 ---
 

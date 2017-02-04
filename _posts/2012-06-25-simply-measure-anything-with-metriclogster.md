@@ -10,7 +10,7 @@ tags:
 - metrics
 - Monitoring
 - Visualisation
-cover: ruler.jpg
+image: ruler.jpg
 date: 2012-06-25 22:56:06+00:00
 ---
 

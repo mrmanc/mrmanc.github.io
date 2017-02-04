@@ -21,7 +21,7 @@ tags:
 - Visualisation
 - UNIX
 - Command Line
-cover: histogram.jpg
+image: histogram.jpg
 date: 2012-06-26 16:54:04+00:00
 ---
 

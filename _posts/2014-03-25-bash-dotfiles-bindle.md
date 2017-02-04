@@ -11,7 +11,7 @@ categories:
 - Dotfiles
 - Command line
 - Configuration
-cover: china-country-postman.jpg
+image: china-country-postman.jpg
 ---
 
 I often feel quite nomadic when using Bash. I’m somewhat a hobo developer, moving from home to home. Recently I’ve been working with OS X at work, and I’ve been on OS X at home for years. Yet still I had some machines where my bash history would drop off quickly, and where aliases I use a lot didn’t exist. When I worked out how to get hostname completion working with ssh I decided it was time to have a dotfiles project.

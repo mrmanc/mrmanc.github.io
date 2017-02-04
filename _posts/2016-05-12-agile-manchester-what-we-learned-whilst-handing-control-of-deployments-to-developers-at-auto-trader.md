@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Agile Manchester—What we learned whilst handing control of deployments to developers at Auto Trader
-cover: autotrader.png
+image: autotrader.png
 comments: true
 categories:
 - devops

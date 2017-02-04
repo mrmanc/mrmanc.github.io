@@ -7,7 +7,7 @@ categories:
 - os x
 - mac
 - proxy
-cover: apple-tree.jpg
+image: apple-tree.jpg
 ---
 
 Here are some tools I’ve found useful recently to work effectively using OS X behind a proxy at work.

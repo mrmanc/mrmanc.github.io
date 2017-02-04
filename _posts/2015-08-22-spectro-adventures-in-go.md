@@ -1,7 +1,7 @@
 ---
 layout: post
 title: spectro… adventures in Go (lang)
-cover: spectro/normal.gif
+image: spectro/normal.gif
 comments: true
 categories:
 - devops

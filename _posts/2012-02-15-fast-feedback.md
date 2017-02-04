@@ -13,7 +13,7 @@ tags:
 - PMD
 - software-development
 date: 2012-02-15 22:55:52+00:00
-cover: fast.jpg
+image: fast.jpg
 ---
 
 My relationship with Ant has had its ups and downs. I hate writing a build file in a language that I’m unfamiliar with, and finding that the language seems designed to encourage and hideous result. Recently however I felt I achieved something, successfully reducing the duration of our teams pre check in task task from three and a half minutes to only 24 seconds.
