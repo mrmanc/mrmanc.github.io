@@ -55,7 +55,7 @@ Whilst I like the summary that this tool gives you, I don’t really like the ou
     ================================================
 
 ## shUnit2
-[Docs](http://shunit2.googlecode.com/svn/trunk/source/2.1/doc/shunit2.html), [Github](https://github.com/zanshine/shunit2), [Google Code](https://code.google.com/p/shunit2)
+[Docs](http://ssb.stsci.edu/testing/shunit2/shunit2.html), [Github](https://github.com/zanshine/shunit2), [Google Code](https://code.google.com/p/shunit2)
 101 stars on Google Code.
 Last updated May 2011
 

@@ -35,7 +35,7 @@ I was surprised and pleased to learn that plenty of people want to improve their
 
 I was pleased to have caught the session about Ops Learning (especially with regard to development practices) and will be exploring some of the ideas such as pull requests for operations code review, fun side projects such as implementing something specific in a new language, reading other people’s pull requests and Ops focussed hack days.
 
-Logging was a well attended session, with many people using and advocating [Elasticsearch / Logstash / Kibana](http://www.elasticsearch.org/overview/), some using Graphite and StatsD, and some using [Reimann](http://aphyr.github.io/riemann/) for alerting and statistical modelling.
+Logging was a well attended session, with many people using and advocating [Elasticsearch / Logstash / Kibana](http://www.elasticsearch.org/overview/), some using Graphite and StatsD, and some using [Reimann](http://riemann.io/) for alerting and statistical modelling.
 
 ## Presentations
 

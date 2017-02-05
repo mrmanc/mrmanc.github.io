@@ -25,9 +25,9 @@ I presented about Automated Deployment at Auto Trader for a [DevOps Edinburgh](h
 
 Links:
 
-* [Continuous Delivery:  Reliable Software Releases through Build, Test, and Deployment Automation](www.amazon.co.uk/dp/0321601912)
+* [Continuous Delivery:  Reliable Software Releases through Build, Test, and Deployment Automation](http://www.amazon.co.uk/dp/0321601912)
 * [The Twelve-Factor App](http://12factor.net/)
-* [Scaling Agile @ Spotify](bit.ly/SquadsAndTribes)
+* [Scaling Agile @ Spotify](http://bit.ly/SquadsAndTribes)
 * [Chef DK](https://downloads.chef.io/chef-dk/)
 * [Berkshelf](http://berkshelf.com/)
 * [Go CD](https://www.go.cd/)
@@ -35,7 +35,7 @@ Links:
 Image credits:
 
 * Gareth Mok for the awesome [Bitstrip](https://www.bitstrips.com/) cartoons
-* [Squads and Tribes diagram](bit.ly/SquadsAndTribes)
+* [Squads and Tribes diagram](http://bit.ly/SquadsAndTribes)
 * Thomas Heald for the Release Dashboard
 * [XKCD](https://xkcd.com/303/) for the ‘Compiling’ webcomic 
 * [Panic Button](https://commons.wikimedia.org/wiki/File:Panic_button.jpg)

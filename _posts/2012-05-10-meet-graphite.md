@@ -32,7 +32,7 @@ The advice is to make it easy for developers to get metrics into Graphite, and t
 
 #### Screenshots
 
-So, I’ll show you some pretty pictures. Graphite is a web application which provides a view on to aggregated data. It provides the ability to build custom charts with the metrics you have pushed in using Logster, StatsD or something else. You can further aggregate data series and use [other functions](http://graphite.readthedocs.org/en/1.0/functions.html) to transform the data you are interested in. You can view metrics over arbitrary time periods and drill down to as much granularity as you’ve recorded (most likely the individual server level if you used Logster).
+So, I’ll show you some pretty pictures. Graphite is a web application which provides a view on to aggregated data. It provides the ability to build custom charts with the metrics you have pushed in using Logster, StatsD or something else. You can further aggregate data series and use [other functions](https://graphite.readthedocs.io/en/latest/functions.html) to transform the data you are interested in. You can view metrics over arbitrary time periods and drill down to as much granularity as you’ve recorded (most likely the individual server level if you used Logster).
 
 ![](http://graphite.wikidot.com/local--files/screen-shots/graphite_fullscreen_800.png)
 
@@ -63,7 +63,7 @@ From an obscure black box a year ago to a realistic view of our application’s 
 #### What’s next?
 
 
-_**Alerting**_; since this information is valuable to us we intend to improve our response by hooking up something like [Graphite Tattle](https://github.com/wayfair/Graphite-Tattle) or [Nagios](http://www.nagios.org/) to provide us with alerts when metrics exceed thresholds. Further, using the [Holt Winters functions](http://graphite.readthedocs.org/en/1.0/functions.html#graphite.render.functions.holtWintersAberration) recently introduced in Graphite we intend to make these alerts smart, basing their confidence of an event on previous data.
+_**Alerting**_; since this information is valuable to us we intend to improve our response by hooking up something like [Graphite Tattle](https://github.com/wayfair/Graphite-Tattle) or [Nagios](http://www.nagios.org/) to provide us with alerts when metrics exceed thresholds. Further, using the [Holt Winters functions](https://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.holtWintersAberration) recently introduced in Graphite we intend to make these alerts smart, basing their confidence of an event on previous data.
 
 _**Aggregation**_; using Logster we have a view of metrics split between application servers, since that is the granularity of our log files. Ideally we would like to record some metrics over multiple servers. This can be done with StatsD, but due to concerns and uncertainty over scalability and redundancy we are considering alternatives.
 
