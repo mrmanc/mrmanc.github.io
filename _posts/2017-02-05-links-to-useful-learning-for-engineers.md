@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Links to Useful Learning for Engineers
+title: Links to Useful Learning (for Engineers)
 image: bookshelf.jpg
 comments: true
 categories:
