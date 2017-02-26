@@ -18,6 +18,7 @@ image: bookshelf.jpg
 * [Your Job Is Not to Write Code](https://medium.com/@lauraklein/your-job-is-not-to-write-code-d002609b117a#.s4sbuzlx1) by Laura Klein
 * [Pair Programming Economics](http://www.trustartist.com/2015/01/27/pair-programming-economics/) by Olaf Lewitz
 * A tweet about [DRY / Don’t Repeat Yourself](https://twitter.com/sarahmei/status/702281663896653824) by Sarah Mei
+* [Mistakes You Apparently Just Have to Make Yourself](https://medium.com/@mcfunley/mistakes-you-apparently-just-have-to-make-yourself-cc2dd2bfc25c#.mt4wj2c95) by Dan McKinley
 
 # Refactoring & Code Design
 
