@@ -62,6 +62,7 @@ image: bookshelf.jpg
 * [How DNS Works](https://howdns.works/)
 * [How the Internet works: Submarine fibre, brains in jars, and coaxial cables](https://arstechnica.co.uk/information-technology/2016/05/how-the-internet-works-submarine-cables-data-centres-last-mile/)
 * [Web Developer Checklist](http://webdevchecklist.com/)
+* [Bash scripting quirks & safety tips](https://jvns.ca/blog/2017/03/26/bash-quirks/) by Julia Evans
 
 # Interesting Postmortems & War Stories
 
