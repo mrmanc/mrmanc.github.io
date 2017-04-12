@@ -63,6 +63,7 @@ image: bookshelf.jpg
 * [How the Internet works: Submarine fibre, brains in jars, and coaxial cables](https://arstechnica.co.uk/information-technology/2016/05/how-the-internet-works-submarine-cables-data-centres-last-mile/)
 * [Web Developer Checklist](http://webdevchecklist.com/)
 * [Bash scripting quirks & safety tips](https://jvns.ca/blog/2017/03/26/bash-quirks/) by Julia Evans
+* [Breaking Down Your Build: Architectural Patterns For A More Efficient Pipeline](https://skillsmatter.com/skillscasts/9930-breaking-down-your-build-architectural-patterns-for-a-more-efficient-pipeline) by Abraham Marin-Perez
 
 # Interesting Postmortems & War Stories
 
