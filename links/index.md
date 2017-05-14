@@ -20,6 +20,10 @@ image: bookshelf.jpg
 * A tweet about [DRY / Don’t Repeat Yourself](https://twitter.com/sarahmei/status/702281663896653824) by Sarah Mei
 * [Mistakes You Apparently Just Have to Make Yourself](https://medium.com/@mcfunley/mistakes-you-apparently-just-have-to-make-yourself-cc2dd2bfc25c#.mt4wj2c95) by Dan McKinley
 
+# Statistics
+
+* [Same Stats, Different Graphs](https://www.autodeskresearch.com/publications/samestats) by Justin Matejka & George Fitzmaurice—on looking at distributions, why we need to plot the data & never trust statistics tables
+
 # Refactoring & Code Design
 
 * [One of the Best Bits of Programming Advice I ever Got (aka Don't make objects that end with 'er')](http://objology.blogspot.co.uk/2011/09/one-of-best-bits-of-programming-advice.html) by Travis Griggs (Object Orientation specific)
@@ -43,6 +47,7 @@ image: bookshelf.jpg
 # Culture
 
 * An important post addressing peoples comfort attending large meetings [ON SHOWING UP TO THE TABLE](https://beero.ps/2016/02/01/on-showing-up-to-the-table/) by Katherine Daniels (@beerops)
+* Check the links in [this tweet](https://twitter.com/bridgetkromhout/status/859010763704287232) from Bridget Kromhaut if you think ‘guys’ is a gender neutral term
 * [Investigating the Potential for Miscommunication Using Emoji](https://grouplens.org/blog/investigating-the-potential-for-miscommunication-using-emoji/) by Hannah Miller
 * CAP Theorum for teams, or [Tradeoffs in Coordination Among Teams](http://blog.jessitron.com/2016/05/tradeoffs-in-coordination-among-teams.html)
 * [What Are Your Pronouns?](http://www.nationalreview.com/article/426040/what-are-your-pronouns-jay-nordlinger) by Jay Nordlinger
@@ -52,6 +57,7 @@ image: bookshelf.jpg
 
 # Continuous Delivery / Operations / Devops
 
+* [The Pushtrain](http://pushtrain.club/) by Dan McKinley—an excellent piece about the importance of managing the human side of continuous delivery, since tools are just part of the problem and culture is more significant
 * Good design principles around Chef Cookbooks: [Our Experiences with Chef: Cookbook and Attribute Design](https://omniti.com/seeds/seeds-our-experiences-with-chef-cookbook-and-attribute-design) by Clinton Wolfe  of OmniTI
 * [Database Migrations Done Right](http://www.brunton-spall.co.uk/post/2014/05/06/database-migrations-done-right/) by Michael Brunton-Spall
 * The [OSI Model / Seven Layer Model](https://en.wikipedia.org/wiki/OSI_model) of networking—every web developer should have a high level understanding of this
@@ -96,6 +102,7 @@ image: bookshelf.jpg
 
 # Technical Resources
 
+* [ripgrep](https://github.com/BurntSushi/ripgrep) is around ten times faster than grep, and supports multi threaded processing
 * Measure your network speed with [fast.com](https://fast.com/)
 * Measure your performance with [WebPageTest](http://www.webpagetest.org/)
 * Record and share your terminal sessions, the right way: [asciinema](https://asciinema.org/)
