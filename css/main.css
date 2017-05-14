@@ -43,6 +43,53 @@ a:hover {
   color: #555;
 }
 
+
+
+q, blockquote {
+  quotes: initial;
+  font-style: italic;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+  line-height: 1.5em;
+  padding-left: 1em;
+  border-left: 4px solid rgba(170, 170, 170, 0.5)
+}
+
+blockquote cite {
+  font-style: italic
+}
+
+blockquote cite a {
+  color: #aaa !important;
+  word-wrap: break-word
+}
+
+blockquote cite:before {
+  content: '\2014';
+  padding-right: .3em;
+  padding-left: .3em;
+  color: #aaa
+}
+
+@media only screen and (min-width: 992px) {
+  blockquote {
+    padding-left: 1.5em;
+    border-left-width: 4px
+  }
+}
+
 /*****************************************************************************/
 /*
 /* Home
