@@ -61,7 +61,7 @@ image: bookshelf.jpg
 * Good design principles around Chef Cookbooks: [Our Experiences with Chef: Cookbook and Attribute Design](https://omniti.com/seeds/seeds-our-experiences-with-chef-cookbook-and-attribute-design) by Clinton Wolfe  of OmniTI
 * [Database Migrations Done Right](http://www.brunton-spall.co.uk/post/2014/05/06/database-migrations-done-right/) by Michael Brunton-Spall
 * The [OSI Model / Seven Layer Model](https://en.wikipedia.org/wiki/OSI_model) of networking—every web developer should have a high level understanding of this
-* An interesting article by [John Allspaw](https://twitter.com/allspaw)—Etsy’s CTO—about effective questioning in the context of incident post mortems called [The Infinite Hows](https://www.oreilly.com/ideas/the-infinite-hows) (as opposed to ‘The Five Whys’).
+* An interesting article by [John Allspaw](https://twitter.com/allspaw)—Etsy’s former CTO—about effective questioning in the context of incident post mortems called [The Infinite Hows](https://www.oreilly.com/ideas/the-infinite-hows) (as opposed to ‘The Five Whys’).
 * Etsy’s awesome resource about running effective debriefs after incidents, building on blameless postmortems & focusing on the importance of learning. [Code As Craft article](https://codeascraft.com/2016/11/17/debriefing-facilitation-guide/) by John Allspaw / [Debriefing Facilitation Guide PDF](http://extfiles.etsy.com/DebriefingFacilitationGuide.pdf)
 * [CORS (cross-origin-resource-sharing) explained in one cartoon ](https://twitter.com/b0rk/status/822658191733510144) by Julia Evans
 * [A whole site explaing CORS](https://enable-cors.org/)
