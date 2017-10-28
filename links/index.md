@@ -79,6 +79,7 @@ image: bookshelf.jpg
 
 # Collaboration and Leadership
 
+* [How great leaders inspire action](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action#t-1065587)—a TEDx talk by Simon Sinek about ‘Why, How, What’ (18 minutes)
 * [This is why you shouldn’t interrupt a programmer](http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/) by Jason Heeris
 * Countering the above I suggest engineers watch this fascinating documentary about insight, problem solving and rest affects your ability… watch about five minutes starting from 46:56. [BBC HORIZON The Creative Brain. How Insight Works.](http://www.dailymotion.com/video/xy9ag1_bbc-horizon-the-creative-brain-how-insight-works_tech)
 * [Cynefin](https://en.wikipedia.org/wiki/Cynefin_framework) (ties in with learning approaches)
