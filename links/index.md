@@ -43,6 +43,7 @@ image: bookshelf.jpg
 
 * REST / Hypermedia: [How to GET a Cup of Coffee](https://www.infoq.com/articles/webber-rest-workflow) by Jim Webber, Savas Parastatidis, Ian Robinson
 * [The Twelve-Factor App](https://12factor.net/) on building cloud native applications
+* [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
 
 # Culture
 
