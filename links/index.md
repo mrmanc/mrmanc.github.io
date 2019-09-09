@@ -45,6 +45,7 @@ image: bookshelf.jpg
 * REST / Hypermedia: [How to GET a Cup of Coffee](https://www.infoq.com/articles/webber-rest-workflow) by Jim Webber, Savas Parastatidis, Ian Robinson
 * [The Twelve-Factor App](https://12factor.net/) on building cloud native applications
 * [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
+* [Decisions, decisions](https://vimeo.com/43536417)—a talk by Dan North about trade-offs, and distinguishing decisions that matter a lot more than others
 
 # Culture
 
