@@ -36,9 +36,13 @@ image: bookshelf.jpg
 * [Composition Over Inheritance](https://twitter.com/theburningmonk/status/575306966551126017) in a single tweet by Yan Cui
 * [Composition vs. Inheritance: How to Choose?](https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose) by Steven Lowe on the ThoughtWorks blog
 * [Uncle Bob’s page on The Principles of OOD](https://web.archive.org/web/20160625144517/http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) / [archived version with live links](https://patrickgoudjoako.com/2014/07/18/principles-of-object-oriented-design-by-uncle-bob/), including SOLID
-* [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html) by Martin Fowler
 * [QWAN Code Smells and Refactoring Cue Cards](http://www.qwan.eu/shop)
 * [The Art of Giving and Receiving Code Reviews (Gracefully)](https://www.developer.management/art-of-code-review-alexandra-hill/) and a [30m presentation](https://www.youtube.com/watch?v=hfrNmZIPq3E)
+
+# Testing
+
+* [Test Desiderata](https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3)—Kent Beck writing about desirable properties of tests
+* [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html) by Martin Fowler
 
 # Architecture
 
