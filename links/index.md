@@ -19,6 +19,7 @@ image: bookshelf.jpg
 * [Pair Programming Economics](http://www.trustartist.com/2015/01/27/pair-programming-economics/) by Olaf Lewitz
 * A tweet about [DRY / Don’t Repeat Yourself](https://twitter.com/sarahmei/status/702281663896653824) by Sarah Mei
 * [Mistakes You Apparently Just Have to Make Yourself](https://medium.com/@mcfunley/mistakes-you-apparently-just-have-to-make-yourself-cc2dd2bfc25c#.mt4wj2c95) by Dan McKinley
+* [How to study for exams](https://www.youtube.com/playlist?list=PL7BImOT2srcEPwr4hSVrqvWYh1SV7LBEx)—A playlist of short YouTube videos explaining how we learn, and how you should go about revising
 
 # Statistics
 
@@ -38,6 +39,10 @@ image: bookshelf.jpg
 * [Uncle Bob’s page on The Principles of OOD](https://web.archive.org/web/20160625144517/http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) / [archived version with live links](https://patrickgoudjoako.com/2014/07/18/principles-of-object-oriented-design-by-uncle-bob/), including SOLID
 * [QWAN Code Smells and Refactoring Cue Cards](http://www.qwan.eu/shop)
 * [The Art of Giving and Receiving Code Reviews (Gracefully)](https://www.developer.management/art-of-code-review-alexandra-hill/) and a [30m presentation](https://www.youtube.com/watch?v=hfrNmZIPq3E)
+
+# Other engineering skills
+* [Dangit, Git!?!](https://dangitgit.com/en)—you screwed up… find help here
+* [Git Pretty](http://justinhileman.info/article/git-pretty/)—a flow chart to help you work out what to do when you have a git mess
 
 # Testing
 
@@ -96,6 +101,7 @@ image: bookshelf.jpg
 * [Situational Leadership Model](http://www.project-management-skills.com/situational-leadership-model.html)
 * [The Most Dangerous Leadership Traps — and the 15-Minute Daily Practice That Will Save You](http://firstround.com/review/the-most-dangerous-leadership-traps-and-the-15-minute-daily-practice-that-will-save-you/)
 * Some useful tips on training yourself to be more empathetic: [Stop Controling Your Reactions to Others' Behavior](http://blog.jbrains.ca/permalink/stop-controling-your-reactions-to-others-behavior) by J. B. Rainsberger
+* [How to make a sandwich](https://www.youtube.com/watch?v=P8sNSNkWFpc)—Dan North talking about how to deliver feedback (if you think it’s ‘good news, bad news, good news’, you should watch this)
 
 # Engineering Books
 
