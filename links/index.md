@@ -40,9 +40,11 @@ image: bookshelf.jpg
 * [QWAN Code Smells and Refactoring Cue Cards](http://www.qwan.eu/shop)
 * [The Art of Giving and Receiving Code Reviews (Gracefully)](https://www.developer.management/art-of-code-review-alexandra-hill/) and a [30m presentation](https://www.youtube.com/watch?v=hfrNmZIPq3E)
 
-# Other engineering skills
+# Git skills
+
 * [Dangit, Git!?!](https://dangitgit.com/en)—you screwed up… find help here
 * [Git Pretty](http://justinhileman.info/article/git-pretty/)—a flow chart to help you work out what to do when you have a git mess
+* [🌳🚀 CS Visualized: Useful Git Commands](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1) is a great site with animations of various Git operations that really help you to see what is happening
 
 # Testing
 
@@ -55,6 +57,7 @@ image: bookshelf.jpg
 * [The Twelve-Factor App](https://12factor.net/) on building cloud native applications
 * [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
 * [Decisions, decisions](https://vimeo.com/43536417)—a talk by Dan North about trade-offs, and distinguishing decisions that matter a lot more than others
+* [Things: how we think of them, what that means for building systems](https://www.darkpeakconsulting.co.uk/post/things-how-we-think-of-them-what-that-means-for-building-systems) by Keith Braithwaite discusses two ways of interpreting the world, and how engineers tendencies to follow categorisation can conflict with other peoples tendency to apply inference
 
 # Culture
 
