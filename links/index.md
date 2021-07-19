@@ -126,3 +126,4 @@ image: bookshelf.jpg
 * Static analysis for your shell scripts: [ShellCheck](https://github.com/koalaman/shellcheck)
 * Internet Archive [Wayback Machine](https://archive.org/web/), for those pages that don’t exist in the present any more
 * [HTTP Archive](http://httparchive.org/) tracks [trends](http://httparchive.org/trends.php?s=All&minlabel=Dec+1+2011&maxlabel=Jan+15+2017) in how the web is built
+* [Sankeymatic](https://sankeymatic.com/build/) generates Sankey Diagrams from code
