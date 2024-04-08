@@ -28,6 +28,7 @@ image: bookshelf.jpg
 # Refactoring & Code Design
 
 * [One of the Best Bits of Programming Advice I ever Got (aka Don't make objects that end with 'er')](http://objology.blogspot.co.uk/2011/09/one-of-best-bits-of-programming-advice.html) by Travis Griggs (Object Orientation specific)
+  * Associated [quote by Peter Coad and Jill Nicola on page 4 of "Object-Oriented Programming"](https://archive.org/details/objectorientedpr00coad/page/4/mode/1up?q=%22-er-er+principle%22)
 * [Code Smells](https://sourcemaking.com/refactoring/smells)
 * [Jim Weirich speaking about Connascence in ‘The Grand Unified Theory’](http://confreaks.tv/videos/aac2009-the-grand-unified-theory)
 * [Codemania 2015: Josh Robb - Connascence & Coupling](https://www.youtube.com/watch?v=Ip2o4vbAK3s)—similar material, better production values
