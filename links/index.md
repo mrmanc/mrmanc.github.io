@@ -44,7 +44,7 @@ image: bookshelf.jpg
 # Git skills
 
 * [Dangit, Git!?!](https://dangitgit.com/en)—you screwed up… find help here
-* [Git Pretty]([http://justinhileman.info/article/git-pretty/](https://web.archive.org/web/20231110194508/http://justinhileman.info/article/git-pretty/))—a flow chart to help you work out what to do when you have a git mess
+* [Git Pretty](https://web.archive.org/web/20231110194508/http://justinhileman.info/article/git-pretty/)—a flow chart to help you work out what to do when you have a git mess
 * [🌳🚀 CS Visualized: Useful Git Commands](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1) is a great site with animations of various Git operations that really help you to see what is happening
 
 # Testing
