@@ -69,7 +69,7 @@ image: bookshelf.jpg
 * [What Are Your Pronouns?](http://www.nationalreview.com/article/426040/what-are-your-pronouns-jay-nordlinger) by Jay Nordlinger
 * [Pronoun Island](http://pronoun.is/)
 * [Tweet about a fascinating documentary about unexpected impacts of ecological diversity](https://twitter.com/allspaw/status/813179702261256192)
-
+* [Publish, don’t send](https://herbertlui.net/contentions-publish-dont-send/) is the UK Government Digital Services mantra around how it is a better investment to write an article or page about something rather than sending a message with an answer to a question… so that: people can discover the information later without asking you again and again; there is a record and canonical source for the information which helps avoid [semantic diffusion](https://martinfowler.com/bliki/SemanticDiffusion.html)
 
 # Continuous Delivery / Operations / Devops
 
