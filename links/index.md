@@ -46,6 +46,7 @@ image: bookshelf.jpg
 * [Dangit, Git!?!](https://dangitgit.com/en)—you screwed up… find help here
 * [Git Pretty](https://web.archive.org/web/20231110194508/http://justinhileman.info/article/git-pretty/)—a flow chart to help you work out what to do when you have a git mess
 * [🌳🚀 CS Visualized: Useful Git Commands](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1) is a great site with animations of various Git operations that really help you to see what is happening
+* [Use templates for better Git commit messages](https://medium.com/autotrader-engineering/use-templates-for-better-git-commit-messages-e34d6adceda9)
 
 # Testing
 
