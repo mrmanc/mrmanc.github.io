@@ -10,7 +10,7 @@ twitter:
   username: mrmanc
 logo: /images/logo.png
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
