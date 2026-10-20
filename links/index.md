@@ -137,3 +137,7 @@ image: bookshelf.jpg
 * [HTTP Archive](http://httparchive.org/) tracks [trends](http://httparchive.org/trends.php?s=All&minlabel=Dec+1+2011&maxlabel=Jan+15+2017) in how the web is built
 * [Sankeymatic](https://sankeymatic.com/build/) generates Sankey Diagrams from code
 * [Linux shell history (with family tree)](https://developer.ibm.com/tutorials/l-linux-shells/#fig1)
+
+# Products
+
+* [Items on Amazon that I have bought and would recommend](https://amzn.to/45EabC9), although these are not referrals and I generally avoid buying from organisations which avoid paying taxes
