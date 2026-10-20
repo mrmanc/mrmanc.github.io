@@ -138,7 +138,7 @@ image: bookshelf.jpg
 * [Sankeymatic](https://sankeymatic.com/build/) generates Sankey Diagrams from code
 * [Linux shell history (with family tree)](https://developer.ibm.com/tutorials/l-linux-shells/#fig1)
 
-# Products
+# Products
 
 * [Items on Amazon that I have bought and would recommend](https://amzn.to/45EabC9), although these are not referrals and I generally avoid buying from organisations which avoid paying taxes
 * [Over-the-Wheel Russian Doll Batt System (No Batt Pins)](https://hartleyandnoble.co.uk/product/over-the-wheel-russian-doll-batt-system-no-batt-pins/?share=aa3dac9) (which I [earn a referral for]({{ "referrals/index.md" | relative_url }}#hartley-and-noble))
