@@ -89,6 +89,7 @@ image: bookshelf.jpg
 * [Web Developer Checklist](http://webdevchecklist.com/)
 * [Bash scripting quirks & safety tips](https://jvns.ca/blog/2017/03/26/bash-quirks/) by Julia Evans
 * [Breaking Down Your Build: Architectural Patterns For A More Efficient Pipeline](https://skillsmatter.com/skillscasts/9930-breaking-down-your-build-architectural-patterns-for-a-more-efficient-pipeline) by Abraham Marin-Perez
+* I highly recommend all developers follow this [Software Carpentry tutorial on The UNIX Shell](https://swcarpentry.github.io/shell-novice/)
 
 # Interesting Postmortems & War Stories
 
