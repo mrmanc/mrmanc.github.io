@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Links to Learning Material
+title: Links
 categories: 
 tags: []
 status: publish
@@ -13,7 +13,9 @@ author:
 image: bookshelf.jpg
 ---
 
-# Reading for every early careers developer
+# Learning Material
+
+## Reading for every early careers developer
 
 * [Your Job Is Not to Write Code](https://medium.com/@lauraklein/your-job-is-not-to-write-code-d002609b117a#.s4sbuzlx1) by Laura Klein
 * [Pair Programming Economics](http://www.trustartist.com/2015/01/27/pair-programming-economics/) by Olaf Lewitz
@@ -21,15 +23,15 @@ image: bookshelf.jpg
 * [Mistakes You Apparently Just Have to Make Yourself](https://medium.com/@mcfunley/mistakes-you-apparently-just-have-to-make-yourself-cc2dd2bfc25c#.mt4wj2c95) by Dan McKinley
 * [How to study for exams](https://www.youtube.com/playlist?list=PL7BImOT2srcEPwr4hSVrqvWYh1SV7LBEx)—A playlist of short YouTube videos explaining how we learn, and how you should go about revising
 
-# Learning to code
+## Learning to code
 
 * [execute program](https://www.executeprogram.com/) is an excellent learning resource for front-end technologies and languages, with a clever structure that uses recall to strengthen learning
 
-# Statistics
+## Statistics
 
 * [Same Stats, Different Graphs](https://www.autodeskresearch.com/publications/samestats) by Justin Matejka & George Fitzmaurice—on looking at distributions, why we need to plot the data & never trust statistics tables
 
-# Refactoring & Code Design
+## Refactoring & Code Design
 
 * [One of the Best Bits of Programming Advice I ever Got (aka Don't make objects that end with 'er')](http://objology.blogspot.co.uk/2011/09/one-of-best-bits-of-programming-advice.html) by Travis Griggs (Object Orientation specific)
   * Associated [quote by Peter Coad and Jill Nicola on page 4 of "Object-Oriented Programming"](https://archive.org/details/objectorientedpr00coad/page/4/mode/1up?q=%22-er-er+principle%22)
@@ -45,19 +47,19 @@ image: bookshelf.jpg
 * [QWAN Code Smells and Refactoring Cue Cards](http://www.qwan.eu/shop)
 * [The Art of Giving and Receiving Code Reviews (Gracefully)](https://www.developer.management/art-of-code-review-alexandra-hill/) and a [30m presentation](https://www.youtube.com/watch?v=hfrNmZIPq3E)
 
-# Git skills
+## Git skills
 
 * [Dangit, Git!?!](https://dangitgit.com/en)—you screwed up… find help here
 * [Git Pretty](https://web.archive.org/web/20231110194508/http://justinhileman.info/article/git-pretty/)—a flow chart to help you work out what to do when you have a git mess
 * [🌳🚀 CS Visualized: Useful Git Commands](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1) is a great site with animations of various Git operations that really help you to see what is happening
 * [Use templates for better Git commit messages](https://medium.com/autotrader-engineering/use-templates-for-better-git-commit-messages-e34d6adceda9)
 
-# Testing
+## Testing
 
 * [Test Desiderata](https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3)—Kent Beck writing about desirable properties of tests
 * [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html) by Martin Fowler
 
-# Architecture
+## Architecture
 
 * REST / Hypermedia: [How to GET a Cup of Coffee](https://www.infoq.com/articles/webber-rest-workflow) by Jim Webber, Savas Parastatidis, Ian Robinson
 * [The Twelve-Factor App](https://12factor.net/) on building cloud native applications
@@ -65,7 +67,7 @@ image: bookshelf.jpg
 * [Decisions, decisions](https://vimeo.com/43536417)—a talk by Dan North about trade-offs, and distinguishing decisions that matter a lot more than others
 * [Things: how we think of them, what that means for building systems](https://www.darkpeakconsulting.co.uk/post/things-how-we-think-of-them-what-that-means-for-building-systems) by Keith Braithwaite discusses two ways of interpreting the world, and how engineers tendencies to follow categorisation can conflict with other peoples tendency to apply inference
 
-# Culture
+## Engineering Culture
 
 * An important post addressing peoples comfort attending large meetings [ON SHOWING UP TO THE TABLE](https://beero.ps/2016/02/01/on-showing-up-to-the-table/) by Katherine Daniels (@beerops)
 * Check the links in [this tweet](https://twitter.com/bridgetkromhout/status/859010763704287232) from Bridget Kromhaut if you think ‘guys’ is a gender neutral term
@@ -76,7 +78,7 @@ image: bookshelf.jpg
 * [Tweet about a fascinating documentary about unexpected impacts of ecological diversity](https://twitter.com/allspaw/status/813179702261256192)
 * [Publish, don’t send](https://herbertlui.net/contentions-publish-dont-send/) is the UK Government Digital Services mantra around how it is a better investment to write an article or page about something rather than sending a message with an answer to a question… so that: people can discover the information later without asking you again and again; there is a record and canonical source for the information which helps avoid [semantic diffusion](https://martinfowler.com/bliki/SemanticDiffusion.html)
 
-# Continuous Delivery / Operations / Devops
+## Continuous Delivery / Operations / Devops
 
 * [The Pushtrain](http://pushtrain.club/) by Dan McKinley—an excellent piece about the importance of managing the human side of continuous delivery, since tools are just part of the problem and culture is more significant
 * Good design principles around Chef Cookbooks: [Our Experiences with Chef: Cookbook and Attribute Design](https://omniti.com/seeds/seeds-our-experiences-with-chef-cookbook-and-attribute-design) by Clinton Wolfe  of OmniTI
@@ -95,13 +97,13 @@ image: bookshelf.jpg
 * [Breaking Down Your Build: Architectural Patterns For A More Efficient Pipeline](https://skillsmatter.com/skillscasts/9930-breaking-down-your-build-architectural-patterns-for-a-more-efficient-pipeline) by Abraham Marin-Perez
 * I highly recommend all developers follow this [Software Carpentry tutorial on The UNIX Shell](https://swcarpentry.github.io/shell-novice/)
 
-# Interesting Postmortems & War Stories
+## Interesting Postmortems & War Stories
 
 * [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) by Doug Seven… on what can go wrong when technical debt, deployments and the financial industry collide
 * [How and why the leap second affected Cloudflare DNS](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/)
 * [A Loud Sound Just Shut Down a Bank's Data Center for 10 Hours](https://motherboard.vice.com/en_us/article/a-loud-sound-just-shut-down-a-banks-data-center-for-10-hours) by Andrada Fiscuțean
 
-# Collaboration and Leadership
+## Collaboration and Leadership
 
 * [How great leaders inspire action](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action#t-1065587)—a TEDx talk by Simon Sinek about ‘Why, How, What’ (18 minutes)
 * [This is why you shouldn’t interrupt a programmer](http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/) by Jason Heeris
@@ -115,7 +117,7 @@ image: bookshelf.jpg
 * Some useful tips on training yourself to be more empathetic: [Stop Controling Your Reactions to Others' Behavior](http://blog.jbrains.ca/permalink/stop-controling-your-reactions-to-others-behavior) by J. B. Rainsberger
 * [How to make a sandwich](https://www.youtube.com/watch?v=P8sNSNkWFpc)—Dan North talking about how to deliver feedback (if you think it’s ‘good news, bad news, good news’, you should watch this)
 
-# Engineering Books
+## Engineering Books
 
 * [The Phoenix Project](http://amzn.to/2l4uW51) by Gene Kim (a must read to understand how Operations departments need to become more agile and more efficient)
 * [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](http://amzn.to/2l4D0Da) by Jez Humble & David Farley
@@ -126,7 +128,7 @@ image: bookshelf.jpg
 * [TechNW—details of technical meetups in Manchester](http://technw.uk/)
 * [Hidden Manchester](http://hidden-manchester.org.uk/)—my unhealthy obsession, and an article about it: [Mapped: The whole of underground Manchester](http://www.manchestereveningnews.co.uk/news/greater-manchester-news/mapped-whole-underground-manchester-11028890)
 
-# Technical Resources
+# Technical Tools and Resources
 
 * [ripgrep](https://github.com/BurntSushi/ripgrep) is around ten times faster than grep, and supports multi threaded processing
 * Measure your network speed with [fast.com](https://fast.com/)
