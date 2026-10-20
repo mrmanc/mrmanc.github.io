@@ -1,0 +1,8 @@
+services:
+  github-pages:
+    volumes:
+      - ${PWD}:/src/site/
+    ports:
+      - '4000:4000'
+    image: markcrossfield/pages-gem:latest-alpine
+    entrypoint: ["jekyll", "serve", "-H", "0.0.0.0", "-P", "4000"]
