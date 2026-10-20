@@ -81,7 +81,8 @@ image: bookshelf.jpg
 * Etsy’s awesome resource about running effective debriefs after incidents, building on blameless postmortems & focusing on the importance of learning. [Code As Craft article](https://codeascraft.com/2016/11/17/debriefing-facilitation-guide/) by John Allspaw / [Debriefing Facilitation Guide PDF](http://extfiles.etsy.com/DebriefingFacilitationGuide.pdf)
 * [CORS (cross-origin-resource-sharing) explained in one cartoon ](https://twitter.com/b0rk/status/822658191733510144) by Julia Evans
 * [A whole site explaing CORS](https://enable-cors.org/)
-* [How DNS Works](https://howdns.works/)
+* [How DNS Works](https://howdns.works/) cartoon guide
+* [How DNSSEC Works](http://howdnssec.works/) cartoon guide
 * [How the Internet works: Submarine fibre, brains in jars, and coaxial cables](https://arstechnica.co.uk/information-technology/2016/05/how-the-internet-works-submarine-cables-data-centres-last-mile/)
 * [Root DNSSEC KSK Ceremony](https://www.stackscale.com/blog/root-dnssec-ksk-ceremony/)
 * [Web Developer Checklist](http://webdevchecklist.com/)
