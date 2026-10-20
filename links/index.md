@@ -13,7 +13,7 @@ author:
 image: bookshelf.jpg
 ---
 
-# Reading for every junior developer
+# Reading for every early careers developer
 
 * [Your Job Is Not to Write Code](https://medium.com/@lauraklein/your-job-is-not-to-write-code-d002609b117a#.s4sbuzlx1) by Laura Klein
 * [Pair Programming Economics](http://www.trustartist.com/2015/01/27/pair-programming-economics/) by Olaf Lewitz
