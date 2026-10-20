@@ -21,6 +21,10 @@ image: bookshelf.jpg
 * [Mistakes You Apparently Just Have to Make Yourself](https://medium.com/@mcfunley/mistakes-you-apparently-just-have-to-make-yourself-cc2dd2bfc25c#.mt4wj2c95) by Dan McKinley
 * [How to study for exams](https://www.youtube.com/playlist?list=PL7BImOT2srcEPwr4hSVrqvWYh1SV7LBEx)—A playlist of short YouTube videos explaining how we learn, and how you should go about revising
 
+# Learning to code
+
+* [execute program](https://www.executeprogram.com/) is an excellent learning resource for front-end technologies and languages, with a clever structure that uses recall to strengthen learning
+
 # Statistics
 
 * [Same Stats, Different Graphs](https://www.autodeskresearch.com/publications/samestats) by Justin Matejka & George Fitzmaurice—on looking at distributions, why we need to plot the data & never trust statistics tables
