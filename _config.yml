@@ -15,3 +15,20 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - compose.yml
+  - CNAME
+  - .ruby-version
+  - LICENSE
+  - README.md
