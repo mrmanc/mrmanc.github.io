@@ -46,7 +46,8 @@ image: bookshelf.jpg
 * [Uncle Bob’s page on The Principles of OOD](https://web.archive.org/web/20160625144517/http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) / [archived version with live links](https://patrickgoudjoako.com/2014/07/18/principles-of-object-oriented-design-by-uncle-bob/), including SOLID
 * [QWAN Code Smells and Refactoring Cue Cards](http://www.qwan.eu/shop)
 * [The Art of Giving and Receiving Code Reviews (Gracefully)](https://www.developer.management/art-of-code-review-alexandra-hill/) and a [30m presentation](https://www.youtube.com/watch?v=hfrNmZIPq3E)
-* [11 Best Practices for Peer Code Review](https://www.yumpu.com/en/document/read/19324387/11-best-practices-for-peer-code-reread-smartbear-support/3) (mirrored, since the [original](https://static1.smartbear.co/support/media/resources/cc/11_Best_Practices_for_Peer_Code_Review.pdf) gives access denied), based on a [Smartbear Cisco study](https://www.scribd.com/document/248254604/11-Proven-Practices-for-Peer-Review#page=3)
+* [11 Best Practices for Peer Code Review](https://www.yumpu.com/en/document/read/19324387/11-best-practices-for-peer-code-reread-smartbear-support/3) (mirrored, since the [original](https://static1.smartbear.co/support/media/resources/cc/11_Best_Practices_for_Peer_Code_Review.pdf) gives access denied), based on a [Code Review at Cisco
+Systems, a 2006 Smart Bear study of Cisco's MeetingPlace product](https://static1.smartbear.co/support/media/resources/cc/book/code-review-cisco-case-study.pdf)
 * [Ask a programmer to review 10 lines of code, he'll find 10 issues. Ask him to do 500 lines and he'll say it looks good.— Giray Özil (@girayozil)](https://twitter.com/girayozil/status/306836785739210752?ref_src=twsrc%5Etfw) (followed by [this one acknowledging that it was stupid to use masculine gender there](https://twitter.com/girayozil/status/926579170976649216?ref_src=twsrc%5Etfw))
 
 ## Git skills
